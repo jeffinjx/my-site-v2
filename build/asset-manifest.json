@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.js": "/static/js/main.7f443f60.js",
+    "static/media/keeper-app.png": "/static/media/keeper-app.2de01182b600ff3aeb1f.png",
+    "static/media/space-tourism.png": "/static/media/space-tourism.c3161a2231a5b50e8a3b.png",
+    "static/media/tindog.png": "/static/media/tindog.dad685aa1cd2477bd7e3.png",
+    "static/media/personal-site.png": "/static/media/personal-site.c6d5a5b0e9e57ea6d402.png",
+    "static/media/drum-kit.png": "/static/media/drum-kit.6ffb48655f8391a045df.png",
+    "static/media/emojipedia.png": "/static/media/emojipedia.65bbaa26a42e266596c9.png",
+    "static/media/dice-game.png": "/static/media/dice-game.f639b9940bdc7d96fb70.png",
+    "static/media/blog-website.png": "/static/media/blog-website.aef9ad524cf47826eed6.png",
+    "static/media/to-do-list-v1.png": "/static/media/to-do-list-v1.521296f186ae388565d0.png",
+    "static/media/newsletter-signup.png": "/static/media/newsletter-signup.fde7620aa33cf5fab839.png",
+    "static/media/secrets-website.png": "/static/media/secrets-website.c57d85fe821e97d26d01.png",
+    "static/media/to-do-list-v2.png": "/static/media/to-do-list-v2.87e6097cd36f7db882ea.png",
+    "static/media/simons-game.png": "/static/media/simons-game.809455589ffdc052b760.png",
+    "static/media/time-app.png": "/static/media/time-app.3b22f2701a6ef4d47e77.png",
+    "static/media/spread-operator.png": "/static/media/spread-operator.204ccb8c1dad8dfb0996.png",
+    "static/media/ejs.svg": "/static/media/ejs.b1c1cc6d252dbb19eec22f923892088b.svg",
+    "static/media/seo.svg": "/static/media/seo.820cf393f38c7e1c957375e0da5e607a.svg",
+    "static/media/react.svg": "/static/media/react.8294fa062813af415a8a19eb97a89c97.svg",
+    "static/media/security.svg": "/static/media/security.95f872fc44d541acfa5eb16308f5eb63.svg",
+    "static/media/hyperterminal.svg": "/static/media/hyperterminal.1a45fdff9d375d49979167208794f91f.svg",
+    "static/media/jquery.svg": "/static/media/jquery.1eda72a88b65bede0636db0e74933151.svg",
+    "static/media/github.svg": "/static/media/github.882e98adf185813972aedac28da4b459.svg",
+    "static/media/git-alt.svg": "/static/media/git-alt.d9f497792350bcf61ed604ff3eb7a380.svg",
+    "static/media/vscode.svg": "/static/media/vscode.4c75f460ad22816f2714f7568474eeee.svg",
+    "index.html": "/index.html",
+    "static/media/bootstrap.svg": "/static/media/bootstrap.9f17f367d16414cd50430c75716393eb.svg",
+    "static/media/sql.svg": "/static/media/sql.48c94d9459cec309b306502b24d0d8c9.svg",
+    "static/media/js.svg": "/static/media/js.468ae02c7e17e0fab6181ddccabfe826.svg",
+    "static/media/node.svg": "/static/media/node.19a922564bd10e958eb7cccbccf521ff.svg",
+    "static/media/less.svg": "/static/media/less.7bc8e6cb94755aeac4a44a31035ebb8d.svg",
+    "static/media/mongodb.svg": "/static/media/mongodb.6779098ac21fc5910cc6684e1e414486.svg",
+    "static/media/css3-alt.svg": "/static/media/css3-alt.fd8aae5020188b3ebddf34c91f6e24ed.svg",
+    "static/media/html5.svg": "/static/media/html5.277f430b85de218015c8dc441cfeee86.svg",
+    "static/media/express.svg": "/static/media/express.037f9143cbec51feac2fd15c69ecb64e.svg",
+    "main.7f443f60.js.map": "/static/js/main.7f443f60.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.7f443f60.js"
+  ]
+}
