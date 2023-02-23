@@ -2535,18 +2535,6 @@ textarea {
 
 }
 
-@media (max-width: 440px) {
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  .h2-title{
-    font-size: 1.2rem;
-  }
-
-}
-
 @media (max-width: 480px) {
     
   .menu ul li a {
@@ -2567,10 +2555,12 @@ textarea {
 
   h1{
     font-size: 1.5rem;
+    top: 170px;
   }
 
   .h2-title{
     font-size: 1rem;
+    top: 145px;
   }
 
   .aboutH2 {
@@ -2599,6 +2589,16 @@ textarea {
 .about-box-container {
   height: 515px;
   background-color: #1c323b;
+}
+
+.showcase{
+  height: 740px;
+}
+.showcase video {
+  height: 740px;
+}
+.overlay{
+  height: 740px;
 }
 
 .skillsH2{
@@ -2657,6 +2657,15 @@ textarea {
 }
 .projects-inner {
   padding-top: 0px;
+}
+
+.contact-section{
+  height: 440px;
+  padding-top: 100px;
+}
+
+footer{
+  margin-top: 75px;
 }
 
 .contactH2 {
@@ -2889,6 +2898,45 @@ footer{
 .overlay4 {
   height: 530px;
 }
+}
+
+@media (max-width: 413px) {
+  .about-box-outline {
+    height: 510px;
+  }
+  .skills-section{
+    padding-top: 110px;
+  }
+  .projects-section{
+    top: -95px;
+  }
+  .contact-section{
+    height: 695px;
+  }
+}
+
+@media (max-width: 386px) {
+  .about-box-outline {
+    height: 535px;
+  }
+  .skills-section{
+    padding-top: 155px;
+  }
+  .projects-section{
+    top: -75px;
+  }
+}
+
+@media (max-width: 374px) {
+  .about-box-outline {
+    height: 555px;
+  }
+  .skills-section{
+    padding-top: 195px;
+  }
+  .projects-section{
+    top: -50px;
+  }
 }
 
 @media (max-width: 358px) {
