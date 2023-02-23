@@ -1,0 +1,3491 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-color: #E3DBD0;
+    --link-color:red;
+    --link-white-color:red;
+    --bg-color-overlay-1: #25414c;
+    --bg-color-overlay-2: rgba(167, 60, 60, 0.1);
+    --navbar-color-dark: invert(100%) sepia(51%) saturate(967%) hue-rotate(298deg) brightness(105%) contrast(79%);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --font-color: #E3DBD0;
+    --link-color:red;
+    --link-white-color:blue;
+    --bg-color-overlay-1: #25414c;
+    --bg-color-overlay-2: rgba(167, 60, 60, 0.1);
+    --navbar-color-light: none;
+  }
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arsenal', sans-serif;
+  color: var(--font-color);
+}
+
+html{
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--font-color);
+}
+h1{
+  position: absolute;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  margin-bottom: 0;
+  font-size: 4.625rem;
+  top: 100px;
+  bottom: 100px;
+  right: 100px;
+  left: 100px;
+  padding: 10rem 4rem 4rem 4rem;  
+  font-family: 'Bellefair', serif;
+}
+
+h2{
+  text-align: center;
+  margin: 0 auto 0 auto;
+  margin-bottom: 0;
+  font-size: 2.625rem;
+  top: 100px;
+  bottom: 100px;
+  right: 100px;
+  left: 100px;
+  padding: 0 4rem 4rem 4rem;  
+}
+
+.h2-title{
+  position: absolute;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  margin-bottom: 0;
+  font-size: 2.625rem;
+  top: 115px;
+  bottom: 100px;
+  right: 100px;
+  left: 100px;
+  padding: 16rem 4rem 4rem 4rem;  
+}
+
+.aboutH2 {
+  position: relative;
+  background-color: #25414c;
+  width: 210px;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  margin-bottom: 0;
+  font-size: 2.625rem;
+  top: -5px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  padding: 0 0rem 2rem 0rem;
+}
+
+.skillsH2 {
+  position: relative;
+  background-color: #25414c;
+  width: 260px;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  margin-bottom: 0;
+  font-size: 2.625rem;
+  top: -27px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  padding: 0 0rem 2rem 0rem;
+}
+
+.projectsH2 {
+    height: 64px;
+    width: 180px;
+    background-color: #25414c;
+    z-index: 1;
+    position: inherit;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    margin-bottom: 0;
+    font-size: 2.625rem;
+    top: -4px;
+    right: 100px;
+    left: 0px;
+    padding: 0 0rem 2rem 0rem;
+}
+
+.contactH2{
+  font-size: 2.625rem;
+  padding-bottom: 2rem;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header .logo{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+} */
+
+/* .toggle{
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+} */
+
+.showcase{
+  position: relative;
+  right: 0;
+  width: 100%;
+  height: 695px;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.showcase video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 695px;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:695px;
+  background: var(--bg-color-overlay-1);
+  mix-blend-mode: overlay;
+}
+
+.overlay2{
+  z-index: +2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color-overlay-2);
+  mix-blend-mode: overlay;
+}
+
+.overlay3{
+  z-index: +2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color-overlay-2);
+  mix-blend-mode: overlay;
+}
+
+.overlay4{
+  z-index: +2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color-overlay-2);
+  mix-blend-mode: overlay;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.menu{
+  background-color: #1c323b;
+  /* background-image: url("/assets/images/pexels-fwstudio-172292.jpg"); */
+  backdrop-filter: blur(20px);
+  /* background-color: #8F8375; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* width: 300px; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: zoomOut;
+}
+
+.video-container {
+  z-index: -100;
+  width:100%;
+  height:75%;
+  position:fixed;
+  top:0;
+  left:0;
+  }
+  
+  #video-bg{
+    width:100%;
+   
+  }
+
+@-webkit-keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+}
+
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+}
+
+.menu ul{
+  position: relative;
+}
+
+.menu ul li{
+  list-style: none;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.menu ul li a:hover{
+  color: #E3DBD0; 
+}
+
+#my-navbar-collapse {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+}
+
+button:focus {
+  outline: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  filter: var(--navbar-color-light);
+  filter: var(--navbar-color-dark);
+  background-image: url(https://i.ibb.co/HrfVRcx/menu.png);
+  position: fixed;
+  height: 35px;
+  width: 35px;
+  right: 45px;
+  top: 45px; 
+}
+
+.navbar {
+  position: relative;
+  right: 15px;
+  top: 25px; 
+  left: -30px;
+  bottom: -25px;
+}
+
+
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: rotate(-200deg);
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: rotate(-200deg);
+    -ms-transform: rotate(-200deg);
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+/* .nav-link{
+  color: #443829;
+} */
+
+.navbarClicked {
+  filter: var(--navbar-color-light);
+  filter: var(--navbar-color-dark);  
+  position: fixed;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  right: 45px;
+  top: 45px; 
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;  
+  background-image: url(https://i.ibb.co/rt3HybH/close.png);
+  height: 35px;
+  width: 35px;
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbarClicked2 {
+  filter: var(--navbar-color-light);
+  filter: var(--navbar-color-dark);  
+  position: fixed;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  right: 45px;
+  top: 45px;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;  
+  background-image: url(https://i.ibb.co/HrfVRcx/menu.png);
+  height: 35px;
+  width: 35px;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.home-section{
+  background-image: url("/assets/images/pexels-neosiam-4498792.jpg");
+}
+
+.about-section{
+  text-align: -webkit-center;
+  position: relative;
+  width: 100%;
+  height: 650px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.skills-section{
+    text-align: -webkit-center;
+    align-items: center;
+    place-content: center;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 520px;
+    padding: 100px 100px;
+    z-index: 2;
+}
+
+.projects-section {
+  text-align: -webkit-center;
+  position: relative;
+  width: 100%;
+  height: 905px;
+  padding-top: 145px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  z-index: 1;
+}
+
+.contact-section {
+  position: relative;
+  width: 100%;
+  height: 695px;
+  padding: 125px 100px;
+}
+
+/* .color-18363E{
+  background-color: #18363E;
+}
+
+.color-1f4650{
+  background-color: #1f4650;
+} */
+
+.color-1c323b{
+  background-color: #1c323b;
+}
+
+.color-25414c{
+  background-color: #25414c;
+}
+
+.paragraph-1{
+  position: inherit;
+  text-align: center;
+  margin: 0 4rem 0 4rem;
+  font-size: 1.312rem;
+}
+
+.paragraph-2{
+  position: absolute;
+  text-align: center;
+  margin: 0 4rem 0 4rem;
+  margin-bottom: 0;
+  font-size: 1.312rem;
+  top: 100px;
+  bottom: 100px;
+  right: 100px;
+  left: 100px;
+  padding: 12rem 4rem 4rem 4rem; 
+}
+
+.contact-link{
+  align-items: center;
+  position: relative;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  margin-bottom: 0;
+  font-size: 1.312rem;
+  top: 100px;
+  bottom: 100px;
+  right: 100px;
+  left: 100px;
+  margin: 15rem 4rem 4rem 4rem;  
+}
+
+.contact-links {
+  left: 80px;
+  position: relative;
+  display: flex;
+}
+
+.btn{
+  box-shadow: none;
+  border-radius: 0;
+  color: #E3DBD0;
+  background-color: #25414c;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  border-bottom: 3px solid #ce5c07;
+}
+
+.btn:hover {
+  background-color: #25414c;
+  color: #ce5c07;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  box-shadow: none;
+  cursor: pointer;
+}
+
+/* .btn-outline-light {
+    color: #E3DBD0;
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+}
+
+.btn-outline-light:hover {
+  color: #443829;
+  background-color: #E3DBD0;
+  border-color: transparent;
+} */
+
+a:hover{
+  text-decoration: none;
+}
+
+/* .btn-outline-dark {
+  color: #E3DBD0;
+  background-color: transparent;
+  background-image: none;
+  border-color: transparent;
+}
+
+.btn-outline-dark:hover {
+color: #443829;
+background-color: #E3DBD0;
+border-color: transparent;
+} */
+
+svg{
+  height:30px; 
+  width:30px;
+  margin-right: 10px;
+  fill: #e3dbd0;
+}
+
+button:hover{
+  background-color: #E3DBD0;
+}
+
+.circle{
+  height: 70px;
+  width: 70px;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  margin-bottom: 0;
+  font-size: 1.312rem;
+  top: 100px;
+  bottom: 100px;
+  right: 100px;
+  left: 100px;
+}
+
+.skill-list{
+  display: contents;
+  position: absolute;
+  /* bottom: 160px;
+  left: 460px; */
+}
+
+.skill1{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 0px 790px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+.skill2{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 0px 650px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+.skill3{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 0px 510px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+.skill4{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 0px 370px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+.skill5{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 0px 230px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+
+.skill6{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 150px 790px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+.skill7{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 150px 650px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+.skill8{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 150px 510px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+.skill9{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 150px 370px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+.skill10{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 150px 230px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+
+.skill11{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 300px 790px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+.skill12{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 300px 650px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+.skill13{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 300px 510px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+.skill14{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 300px 370px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+.skill15{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 300px 230px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+
+.skill16{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 0px 90px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+.skill17{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 150px 90px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+
+.skill18{
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  margin: 300px 90px 0 auto;
+  margin-bottom: 0;
+  fill: #E3DBD0;
+}
+
+.skill-font{
+  font-size: 1.312rem;
+}
+
+.skill1-text{
+    position: absolute;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    margin-bottom: 0;
+    top: 100px;
+    bottom: 100px;
+    right: -4px;
+    padding: 5rem 39.8rem 0rem 2rem;
+}
+
+.skill2-text{
+    position: absolute;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    margin-bottom: 0;
+    top: 100px;
+    bottom: 100px;
+    right: 92px;
+    padding: 5rem 25.8rem 0rem 2rem;
+}
+
+.skill3-text{
+    position: absolute;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    margin-bottom: 0;
+    top: 100px;
+    bottom: 100px;
+    right: 202px;
+    padding: 5rem 8.5rem 0rem 0rem;
+}
+
+.skill4-text{
+    position: absolute;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    margin-bottom: 0;
+    top: 100px;
+    bottom: 100px;
+    right: 104px;
+    padding: 5rem 7.1rem 0rem 0rem;
+}
+
+.skill5-text{
+    position: absolute;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    margin-bottom: 0;
+    top: 100px;
+    bottom: 100px;
+    right: 4px;
+    padding: 5rem 3.4rem 0rem 0rem;
+}
+
+.skill6-text{
+    position: absolute;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    margin-bottom: 0;
+    top: 100px;
+    bottom: 100px;
+    right: -115px;
+    padding: 5rem 3.5rem 0rem 0rem;
+}
+
+.skill7-text{
+position: absolute;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    margin-bottom: 0;
+    top: 100px;
+    bottom: 100px;
+    right: 95px;
+    padding: 14.5rem 33.6rem 0rem 1rem;
+}
+
+.skill8-text{
+    position: absolute;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    margin-bottom: 0;
+    top: 100px;
+    bottom: 100px;
+    right: 92px;
+    padding: 14.5rem 25.7rem 0rem 2rem;
+}
+
+.skill9-text{
+    position: absolute;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    margin-bottom: 0;
+    top: 100px;
+    bottom: 100px;
+    right: 107px;
+    padding: 14.5rem 16.5rem 0rem 2rem;
+}
+
+.skill10-text{
+    position: absolute;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    margin-bottom: 0;
+    top: 100px;
+    bottom: 100px;
+    right: 162px;
+    padding: 14.5rem 3rem 0rem 15rem;
+}
+
+.skill11-text{
+    position: absolute;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    margin-bottom: 0;
+    top: 100px;
+    bottom: 100px;
+    right: 35px;
+    padding: 14.5rem 3.4rem 0rem 33rem;
+}
+
+.skill12-text{
+    position: absolute;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    margin-bottom: 0;
+    top: 100px;
+    bottom: 100px;
+    right: -134px;
+    padding: 14.5rem 3.6rem 0rem 0rem;
+}
+
+.skill13-text{
+    position: absolute;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    margin-bottom: 0;
+    top: 100px;
+    bottom: 100px;
+    right: 92px;
+    padding: 24rem 33.6rem 0rem 1rem;
+}
+
+.skill14-text{
+    position: absolute;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    margin-bottom: 0;
+    top: 100px;
+    bottom: 100px;
+    right: 95px;
+    padding: 24rem 24rem 0rem 2rem;
+}
+
+.skill15-text{
+  position: absolute;
+  text-align: center;
+  margin: 0 4rem 0 4rem;
+  margin-bottom: 0;
+  top: 100px;
+  bottom: 100px;
+  right: 100px;
+  padding: 24rem 15.4rem 0rem 2rem;
+}
+
+.skill16-text{
+  position: absolute;
+  text-align: center;
+  margin: 0 4rem 0 4rem;
+  margin-bottom: 0;
+  top: 100px;
+  bottom: 100px;
+  right: 172px;
+  padding: 24rem 3.1rem 0rem 15rem;
+}
+
+.skill17-text{
+  position: absolute;
+  text-align: center;
+  margin: 0 4rem 0 4rem;
+  margin-bottom: 0;
+  top: 100px;
+  bottom: 100px;
+  right: -18px;
+  padding: 24rem 5.5rem 0rem 33rem;
+}
+
+.skill18-text{
+  position: absolute;
+  text-align: center;
+  margin: 0 0 0 0;
+  margin-bottom: 0;
+  top: 100px;
+  bottom: 100px;
+  right: -70px;
+  padding: 24rem 3.2rem 0rem 0rem;
+  width: 136px;
+}
+
+.download-button{  
+  display: flex;
+  bottom: 25px;
+  left: -5px;
+  position: absolute;
+}
+
+button.navbar-toggler{
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+
+.rectangle{
+  height: 300px; 
+  width: 300px;
+  align-items: center;
+  display: flex;
+  position: relative;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  margin-bottom: 0;
+  font-size: 1.312rem;
+  top: 100px;
+  bottom: 100px;
+  right: 100px;
+  left: 100px;
+}
+
+.carousel {
+  position: relative; 
+  height: 500px;
+  width: 1000px;
+}
+
+.carousel-inner{
+  border-radius: 2%;
+}
+
+.carousel-indicators li {
+  background-color:#1f4650;
+}
+
+.carousel-indicators .active {
+  background-color:#E3DBD0;
+}
+
+.hidden { 
+  display:none; 
+}
+
+.logo {
+  filter: var(--navbar-color-light);
+  filter: var(--navbar-color-dark);  
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  left: 45px;
+  top: 40px; 
+}
+
+section#contact {
+  background-image: url("../assets/images/map-image-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section#contact .section-heading {
+  color: #fff;
+}
+section#contact form#contactForm .form-group {
+  margin-bottom: 1.5rem;
+}
+section#contact form#contactForm .form-group input,
+section#contact form#contactForm .form-group textarea {
+  padding: 1.25rem;
+}
+section#contact form#contactForm .form-group input.form-control {
+  height: auto;
+}
+section#contact form#contactForm .form-group-textarea {
+  height: 100%;
+}
+section#contact form#contactForm .form-group-textarea textarea {
+  height: 200px;
+}
+section#contact form#contactForm p.help-block {
+  margin: 0;
+}
+section#contact form#contactForm .form-control:focus {
+  border-color: none;
+  box-shadow: none;
+}
+section#contact form#contactForm ::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm :-moz-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm ::-moz-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm :-ms-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 0.5rem;
+  margin-top: 90px;
+  /* background-color: #18363E; */
+}
+
+footer p {
+  color: #ccc;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-685rem, 0, 0);
+  }
+}
+
+@keyframes reverse-ticker {
+  0% {
+    transform: translate3d(-685rem, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.img-ticker {
+  white-space: nowrap;
+  margin: 0 0;
+  z-index: +5;
+  position: relative;
+  animation: ticker 90s linear;
+  animation-iteration-count: infinite;
+}
+
+.reverse-img-ticker {
+  white-space: nowrap;
+  margin: 0 0;
+  z-index: +5;
+  position: relative;
+  animation: reverse-ticker 90s linear;
+  animation-iteration-count: infinite;
+}
+
+.ticker-stop:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.slide-item {
+  position: relative;
+  transition: transform .2s;
+  height: 200px;
+  width: 400px;
+}
+
+.slide-item:hover {
+  transition: transform .2s;
+  transform: scale(1.1);
+}
+
+.about-box-container {
+  height: 450px;
+  padding-top: 35px;
+  background-color: #25414c;
+}
+
+.about-box-outline {
+  position: relative;
+  height: 380px;
+  outline: 3px solid #ce5c07;
+  outline-offset: -25px;
+}
+
+.about-title-bg {
+  display: contents;
+  margin: 0 25rem;
+  position: relative;
+  background-color: #25414c;
+}
+
+.skills-box-container {
+  width: 100%;
+  height: 675px;
+  padding-top: 40px;
+  background-color: #25414c;
+  z-index: 1;
+}
+
+.skills-box-outline {
+  position: relative;
+  height: 595px;
+  outline: 3px solid #ce5c07;
+  outline-offset: -25px;
+}
+
+.skills-title-bg {
+  margin: 0 46.5rem;
+  position: inherit;
+  background-color: #25414c;
+  align-items: center;
+  display: initial;
+}
+
+.projects-box-container {
+  height: 695px;
+  padding-top: 40px;
+  background-color: #25414c;
+}
+
+.projects-box-outline {
+  position: relative;
+  height: 620px;
+  outline: 3px solid #ce5c07;
+  outline-offset: -25px;
+}
+
+.projects-title-bg {
+  display: contents;
+  margin: 0 25rem;
+  position: relative;
+  background-color: #25414c;
+}
+
+.projects-inner {
+  margin: 0px 3rem;
+  padding-top: 25px;
+  position: relative;
+}
+
+.form-control {
+  border-radius: 0;
+  color: #E3DBD0;
+  border: none;
+  background-color: #25414c;
+}
+
+.name-form{
+  height: 60px;
+  border-bottom: 3px solid #1c323b;
+}
+
+.email-form{
+  height: 60px;
+  border-bottom: 3px solid #1c323b;
+}
+
+.message-form{
+  height: 180px;
+  border-bottom: 3px solid #1c323b;
+}
+
+/* .form-control:focus {
+  background-color: #25414c;
+}
+
+.form-control:active {
+  background-color: #25414c;
+} */
+
+.form-control:hover, 
+.form-control:focus, 
+.form-control:active{
+  outline: none;
+  box-shadow: none !important;
+  background-color: #25414c !important;
+  border-bottom: 3px solid #ce5c07;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 50000s ease-in-out 0s;
+}
+
+textarea {
+  resize: none;
+}
+
+    @media (max-width: 1298px) {
+  
+      .about-box-outline {
+        height: 410px;
+      }
+      .about-box-container{
+        height: 480px;
+      }
+      
+      .skills-section { 
+        padding-top: 155px;
+      }
+
+      .projects-section {
+        padding-top: 170px;
+        height: 930px;
+      }
+      
+      }
+
+      @media (max-width: 1182px) {
+  
+        .about-box-outline {
+          height: 440px;
+        }
+        .about-box-container{
+          height: 510px;
+        }
+        
+        .skills-section { 
+          padding-top: 215px;
+        }
+  
+        .projects-section {
+          padding-top: 195px;
+          height: 950px;
+        }
+        
+        }
+
+        @media (max-width: 1060px) {
+
+          .circle{
+            height: 50px;
+          }
+          .skill-font{
+            font-size: 1.2rem;
+          }
+          .skill1{
+            margin: 0px 690px 0 auto;
+          }
+          .skill2{
+            margin: 0px 590px 0 auto;
+          }
+          .skill3{
+            margin: 0px 490px 0 auto;
+          }
+          .skill4{
+            margin: 0px 390px 0 auto;
+          }
+          .skill5{
+            margin: 0px 290px 0 auto;
+          }
+          .skill6{
+            margin: 130px 690px 0 auto;
+          }
+          .skill7{
+            margin: 130px 590px 0 auto;
+          }
+          .skill8{
+            margin: 130px 490px 0 auto;
+          }
+          .skill9{
+            margin: 130px 390px 0 auto;
+          }
+          .skill10{
+            margin: 130px 290px 0 auto;
+          }
+          .skill11{
+            margin: 255px 690px 0 auto;
+          }
+          .skill12{
+            margin: 255px 590px 0 auto;
+          }
+          .skill13{
+            margin: 255px 490px 0 auto;
+          }
+          .skill14{
+            margin: 255px 390px 0 auto;
+          }
+          .skill15{
+            margin: 255px 290px 0 auto;
+          }
+          .skill16{
+            margin: 0px 190px 0 auto;
+          }
+          .skill17{
+            margin: 130px 190px 0 auto;
+          }
+          .skill18{
+            margin: 255px 190px 0 auto;
+          }
+
+        .skill1-text{
+          padding: 4rem 33.8rem 0rem 2rem;
+        }
+        .skill2-text{
+          padding: 4rem 22.2rem 0rem 2rem;
+        }
+        .skill3-text{
+          padding: 4rem 7.5rem 0rem 0rem;
+        }
+        .skill4-text{
+          padding: 4rem 8.5rem 0rem 0rem;
+        }
+        .skill5-text{
+          padding: 4rem 7.4rem 0rem 0rem;
+        }
+        .skill6-text{
+          padding: 4rem 10rem 0rem 0rem;
+        }
+        .skill7-text{
+          padding: 12rem 27.6rem 0rem 1rem;
+        }
+        .skill8-text{
+          padding: 12rem 22.2rem 0rem 2rem;
+        }
+        .skill9-text{
+          padding: 12rem 15.3rem 0rem 2rem;
+        }
+        .skill10-text{
+          padding: 12rem 4.7rem 0rem 15rem;
+        }
+        .skill11-text{
+          padding: 12rem 7.2rem 0rem 33rem;
+        }
+        .skill12-text{
+          padding: 12rem 10.2rem 0rem 0rem;
+        }
+        .skill13-text{
+          padding: 20rem 27.6rem 0rem 1rem;
+        }
+        .skill14-text{
+          padding: 20rem 20.5rem 0rem 2rem;
+        }
+        .skill15-text{
+          padding: 20rem 14.4rem 0rem 2rem;
+        }
+        .skill16-text{
+          padding: 20rem 4.5rem 0rem 15rem;
+        }
+        .skill17-text{
+          padding: 20rem 9.5rem 0rem 33rem;
+        }
+        .skill18-text{
+          padding: 20rem 7.2rem 0rem 0rem;
+          width: 275px;
+        }
+  
+          .about-box-outline {
+            height: 475px;
+          }
+          .about-box-container{
+            height: 545px;
+          }
+          
+          .skills-section { 
+            padding-top: 240px;
+          }
+          .skills-box-outline{
+            height: 535px;
+          }
+          .skills-box-container{
+            height: 615px;
+          }
+    
+          .projects-section {
+            padding-top: 185px;
+            height: 945px;
+          }
+          
+          }
+
+          @media (max-width: 960px) {
+
+            .skill1{
+              margin: 0px 245px 0 auto;
+            }
+            .skill2{
+              margin: 0px 145px 0 auto;
+            }
+            .skill3{
+              margin: 0px 45px 0 auto;
+            }
+            .skill4{
+              margin: 0px -55px 0 auto;
+            }
+            .skill5{
+              margin: 0px -155px 0 auto;
+            }
+            .skill6{
+              margin: 130px 245px 0 auto;
+            }
+            .skill7{
+              margin: 130px 145px 0 auto;
+            }
+            .skill8{
+              margin: 130px 45px 0 auto;
+            }
+            .skill9{
+              margin: 130px -55px 0 auto;
+            }
+            .skill10{
+              margin: 130px -155px 0 auto;
+            }
+            .skill11{
+              margin: 255px 245px 0 auto;
+            }
+            .skill12{
+              margin: 255px 145px 0 auto;
+            }
+            .skill13{
+              margin: 255px 45px 0 auto;
+            }
+            .skill14{
+              margin: 255px -55px 0 auto;
+            }
+            .skill15{
+              margin: 255px -155px 0 auto;
+            }
+            .skill16{
+              margin: 0px -255px 0 auto;
+            }
+            .skill17{
+              margin: 130px -255px 0 auto;
+            }
+            .skill18{
+              margin: 255px -255px 0 auto;
+            }
+  
+          .skill1-text{
+            margin: 0;
+            padding: 4rem 33.8rem 0rem 2rem;
+            right: -185px;
+          }
+          .skill2-text{
+            margin: 0;
+            padding: 4rem 22.2rem 0rem 2rem;
+            right: -88px;
+          }
+          .skill3-text{
+            margin: 0;
+            padding: 4rem 7.5rem 0rem 0rem;
+            right: 22px;
+          }
+          .skill4-text{
+            margin: 0;
+            padding: 4rem 8.5rem 0rem 0rem;
+            right: -75px;
+          }
+          .skill5-text{
+            margin: 0;
+            padding: 4rem 7.4rem 0rem 0rem;
+            right: -175px;
+          }
+          .skill6-text{
+            margin: 0;
+            padding: 4rem 1.6rem 0rem 0rem;
+            right: -160px;
+          }
+          .skill7-text{
+            margin: 0;
+            padding: 12rem 27.6rem 0rem 1rem;
+            right: -88px;
+          }
+          .skill8-text{
+            margin: 0;
+            padding: 12rem 22.2rem 0rem 2rem;
+            right: -90px;
+          }
+          .skill9-text{
+            margin: 0;
+            padding: 12rem 15.3rem 0rem 2rem;
+            right: -74px;
+          }
+          .skill10-text{
+            margin: 0;
+            padding: 12rem 4.7rem 0rem 15rem;
+            right: -20px;
+          }
+          .skill11-text{
+            margin: 0;
+            padding: 12rem 7.2rem 0rem 33rem;
+            right: -147px;
+          }
+          .skill12-text{
+            margin: 0;
+            padding: 12rem 10.2rem 0rem 0rem;
+            right: -314px;
+          }
+          .skill13-text{
+            margin: 0;
+            padding: 20rem 27.6rem 0rem 1rem;
+            right: -88px;
+          }
+          .skill14-text{
+            margin: 0;
+            padding: 20rem 20.5rem 0rem 2rem;
+            right: -82px;
+          }
+          .skill15-text{
+            margin: 0;
+            padding: 20rem 14.4rem 0rem 2rem;
+            right: -80px;
+          }
+          .skill16-text{
+            margin: 0;
+            padding: 20rem 4.5rem 0rem 15rem;
+            right: -7px;
+          }
+          .skill17-text{
+            margin: 0;
+            padding: 20rem 9.5rem 0rem 33rem;
+            right: -195px;
+          }
+          .skill18-text{
+            margin: 0;
+            padding: 20rem 7.2rem 0rem 0rem;
+            width: 275px;
+            right: -315px;
+          }
+    
+            .about-box-outline {
+              height: 475px;
+            }
+            .about-box-container{
+              height: 545px;
+            }
+            
+            .skills-section { 
+              padding-top: 240px;
+            }
+            .skills-box-outline{
+              height: 535px;
+            }
+            .skills-box-container{
+              height: 615px;
+            }
+            .skills-title-bg{
+              display: table-cell;
+            }
+            .skillsH2{
+              top: -6px;
+            }
+      
+            .projects-section {
+              padding-top: 185px;
+              height: 945px;
+            }
+            
+            }
+
+            @media (max-width: 887px) {
+
+              .about-box-outline {
+                height: 505px;
+              }
+              .about-box-container{
+                height: 575px;
+              }
+              
+              .skills-section { 
+                padding-top: 285px;
+              }
+
+              .projects-section {
+                padding-top: 200px;
+                height: 960px;
+              }
+              
+              }
+
+              @media (max-width: 842px) {
+
+                .circle {
+                  height: 35px;
+                }
+                .skill-font {
+                  font-size: 1.1rem;
+                }
+              
+                .skill1{
+                  margin: 0px 185px 0 auto;
+                }
+                .skill2{
+                  margin: 0px 110px 0 auto;
+                }
+                .skill3{
+                  margin: 0px 35px 0 auto;
+                }
+                .skill4{
+                  margin: 0px -40px 0 auto;
+                }
+                .skill5{
+                  margin: 0px -115px 0 auto;
+                }
+                .skill6{
+                  margin: 110px 185px 0 auto;
+                }
+                .skill7{
+                  margin: 110px 110px 0 auto;
+                }
+                .skill8{
+                  margin: 110px 35px 0 auto;
+                }
+                .skill9{
+                  margin: 110px -40px 0 auto;
+                }
+                .skill10{
+                  margin: 110px -115px 0 auto;
+                }
+                .skill11{
+                  margin: 225px 185px 0 auto;
+                }
+                .skill12{
+                  margin: 225px 110px 0 auto;
+                }
+                .skill13{
+                  margin: 225px 35px 0 auto;
+                }
+                .skill14{
+                  margin: 225px -40px 0 auto;
+                }
+                .skill15{
+                  margin: 225px -115px 0 auto;
+                }
+                .skill16{
+                  margin: 0px -190px 0 auto;
+                }
+                .skill17{
+                  margin: 110px -190px 0 auto;
+                }
+                .skill18{
+                  margin: 225px -190px 0 auto;
+                }
+      
+              .skill1-text{
+                margin: 0;
+                padding: 3rem 30.2rem 0rem 2rem;
+                right: -185px;
+              }
+              .skill2-text{
+                margin: 0;
+                padding: 3rem 20rem 0rem 2rem;
+                right: -88px;
+              }
+              .skill3-text{
+                margin: 0;
+                padding: 3rem 7rem 0rem 0rem;
+                right: 22px;
+              }
+              .skill4-text{
+                margin: 0;
+                padding: 3rem 9.3rem 0rem 0rem;
+                right: -75px;
+              }
+              .skill5-text{
+                margin: 0;
+                padding: 3rem 10rem 0rem 0rem;
+                right: -175px;
+              }
+              .skill6-text{
+                margin: 0;
+                padding: 3rem 5.9rem 0rem 0rem;
+                right: -160px;
+              }
+              .skill7-text{
+                margin: 0;
+                padding: 10rem 24rem 0rem 1rem;
+                right: -88px;
+              }
+              .skill8-text{
+                margin: 0;
+                padding: 10rem 20.1rem 0rem 2rem;
+                right: -90px;
+              }
+              .skill9-text{
+                margin: 0;
+                padding: 10rem 14.7rem 0rem 2rem;
+                right: -74px;
+              }
+              .skill10-text{
+                margin: 0;
+                padding: 10rem 5.7rem 0rem 15rem;
+                right: -20px;
+              }
+              .skill11-text{
+                margin: 0;
+                padding: 10rem 9.7rem 0rem 33rem;
+                right: -147px;
+              }
+              .skill12-text{
+                margin: 0;
+                padding: 10rem 14.4rem 0rem 0rem;
+                right: -314px;
+              }
+              .skill13-text{
+                margin: 0;
+                padding: 17rem 24rem 0rem 1rem;
+                right: -88px;
+              }
+              .skill14-text{
+                margin: 0;
+                padding: 17rem 18.3rem 0rem 2rem;
+                right: -82px;
+              }
+              .skill15-text{
+                margin: 0;
+                padding: 17rem 13.9rem 0rem 2rem;
+                right: -80px;
+              }
+              .skill16-text{
+                margin: 0;
+                padding: 17rem 5.4rem 0rem 15rem;
+                right: -7px;
+              }
+              .skill17-text{
+                margin: 0;
+                padding: 17rem 12rem 0rem 33rem;
+                right: -195px;
+              }
+              .skill18-text{
+                margin: 0;
+                padding: 17rem 14.2rem 0rem 0rem;
+                width: 295px;
+                right: -315px;
+              }
+
+                .about-box-outline {
+                  height: 480px;
+                }
+                .about-box-container{
+                  height: 550px;
+                }
+                .paragraph-1 {
+                  font-size: 1.2rem;
+                }
+                
+                .skills-section { 
+                  padding-top: 180px;
+                }
+                .skills-box-outline{
+                  height: 480px;
+                }
+                .skills-box-container{
+                  height: 555px;
+                }
+  
+                .projects-section {
+                  padding-top: 120px;
+                  height: 880px;
+                }
+                
+                }
+
+                @media (max-width: 798px) {
+  
+                  .about-box-outline {
+                    height: 510px;
+                  }
+                  .about-box-container{
+                    height: 580px;
+                  }
+                  
+                  .skills-section { 
+                    padding-top: 235px;
+                  }
+    
+                  .projects-section {
+                    padding-top: 145px;
+                    height: 900px;
+                  }
+                  
+                  }
+
+                  @media (max-width: 767px){
+                    .contact-section {
+                      height: 790px;
+                  }
+                  }
+
+                  @media (max-width: 755px) {
+
+                    .about-section{
+                      height: 665px;
+                    }
+                    .about-box-outline {
+                      height: 535px;
+                    }
+                    .about-box-container{
+                      height: 610px;
+                      z-index: 1;
+                      position: inherit;
+                    }
+                    
+                    .skills-section { 
+                      padding-top: 260px;
+                    }
+      
+                    .projects-section {
+                      padding-top: 160px;
+                      height: 925px;
+                    }
+                    
+                    }
+
+                    @media (max-width: 749px) {
+  
+                      .about-box-outline {
+                        height: 560px;
+                      }
+                      .about-box-container{
+                        height: 630px;
+                      }
+                      .about-section{
+                        height: 690px;
+                      }
+                      
+                      }
+
+                      @media (max-width: 740px) {
+
+                        .circle {
+                          height: 30px;
+                        }
+                        .skill-font {
+                          font-size: 0.9rem;
+                        }
+
+                        .skill1{
+                          margin: 0px 140px 0 auto;
+                        }
+                        .skill2{
+                          margin: 0px 80px 0 auto;
+                        }
+                        .skill3{
+                          margin: 0px 20px 0 auto;
+                        }
+                        .skill4{
+                          margin: 0px -40px 0 auto;
+                        }
+                        .skill5{
+                          margin: 0px -100px 0 auto;
+                        }
+                        .skill6{
+                          margin: 110px 140px 0 auto;
+                        }
+                        .skill7{
+                          margin: 110px 80px 0 auto;
+                        }
+                        .skill8{
+                          margin: 110px 20px 0 auto;
+                        }
+                        .skill9{
+                          margin: 110px -40px 0 auto;
+                        }
+                        .skill10{
+                          margin: 110px -100px 0 auto;
+                        }
+                        .skill11{
+                          margin: 225px 140px 0 auto;
+                        }
+                        .skill12{
+                          margin: 225px 80px 0 auto;
+                        }
+                        .skill13{
+                          margin: 225px 20px 0 auto;
+                        }
+                        .skill14{
+                          margin: 225px -40px 0 auto;
+                        }
+                        .skill15{
+                          margin: 225px -100px 0 auto;
+                        }
+                        .skill16{
+                          margin: 0px -160px 0 auto;
+                        }
+                        .skill17{
+                          margin: 110px -160px 0 auto;
+                        }
+                        .skill18{
+                          margin: 225px -160px 0 auto;
+                        }
+              
+                      .skill1-text{
+                        margin: 0;
+                        padding: 3rem 27.6rem 0rem 2rem;
+                        right: -185px;
+                      }
+                      .skill2-text{
+                        margin: 0;
+                        padding: 3rem 18.3rem 0rem 2rem;
+                        right: -88px;
+                      }
+                      .skill3-text{
+                        margin: 0;
+                        padding: 3rem 6.5rem 0rem 0rem;
+                        right: 22px;
+                      }
+                      .skill4-text{
+                        margin: 0;
+                        padding: 3rem 9.6rem 0rem 0rem;
+                        right: -75px;
+                      }
+                      .skill5-text{
+                        margin: 0;
+                        padding: 3rem 11.2rem 0rem 0rem;
+                        right: -175px;
+                      }
+                      .skill6-text{
+                        margin: 0;
+                        padding: 3rem 7.8rem 0rem 0rem;
+                        right: -160px;
+                      }
+                      .skill7-text{
+                        margin: 0;
+                        padding: 10rem 21.6rem 0rem 1rem;
+                        right: -88px;
+                      }
+                      .skill8-text{
+                        margin: 0;
+                        padding: 10rem 18.4rem 0rem 2rem;
+                        right: -90px;
+                      }
+                      .skill9-text{
+                        margin: 0;
+                        padding: 10rem 13.9rem 0rem 2rem;
+                        right: -74px;
+                      }
+                      .skill10-text{
+                        margin: 0;
+                        padding: 10rem 6rem 0rem 15rem;
+                        right: -20px;
+                      }
+                      .skill11-text{
+                        margin: 0;
+                        padding: 10rem 10.8rem 0rem 33rem;
+                        right: -147px;
+                      }
+                      .skill12-text{
+                        margin: 0;
+                        padding: 10rem 16.5rem 0rem 0rem;
+                        right: -314px;
+                      }
+                      .skill13-text{
+                        margin: 0;
+                        padding: 17rem 21.4rem 0rem 1rem;
+                        right: -88px;
+                      }
+                      .skill14-text{
+                        margin: 0;
+                        padding: 17rem 16.8rem 0rem 2rem;
+                        right: -82px;
+                      }
+                      .skill15-text{
+                        margin: 0;
+                        padding: 17rem 13.3rem 0rem 2rem;
+                        right: -80px;
+                      }
+                      .skill16-text{
+                        margin: 0;
+                        padding: 17rem 5.7rem 0rem 15rem;
+                        right: -7px;
+                      }
+                      .skill17-text{
+                        margin: 0;
+                        padding: 17rem 13.2rem 0rem 33rem;
+                        right: -195px;
+                      }
+                      .skill18-text{
+                        margin: 0;
+                        padding: 17rem 14.5rem 0rem 0rem;
+                        width: 350px;
+                        right: -315px;
+                      }
+  
+                        .about-box-outline {
+                          height: 560px;
+                        }
+                        .about-box-container{
+                          height: 630px;
+                        }
+                        
+                        }
+
+                        @media (max-width: 683px) {
+    
+                          .about-box-outline {
+                            height: 530px;
+                          }
+                          .about-box-container{
+                            height: 600px;
+                          }
+                          .paragraph-1{
+                            font-size: 1.1rem;
+                          }
+                          
+                          .skills-section { 
+                            padding-top: 200px;
+                          }
+            
+                          .projects-section {
+                            padding-top: 130px;
+                            height: 885px;
+                          }
+                          
+                          }
+
+                          @media (max-width: 670px) {
+
+                            .circle {
+                              height: 40px;
+                            }
+                            .skill-font {
+                              font-size: 1rem;
+                            }
+
+                            .skill1{
+                              margin: 0px 90px 0 auto;
+                            }
+                            .skill2{
+                              margin: 0px 0px 0 auto;
+                            }
+                            .skill3{
+                              margin: 0px -90px 0 auto;
+                            }
+                            
+                            .skill4{
+                              margin: 90px 90px 0 auto;
+                            }
+                            .skill5{
+                              margin: 90px 0px 0 auto;
+                            }
+                            .skill16{
+                              margin: 90px -90px 0 auto;
+                            }
+
+                            .skill6{
+                              margin: 180px 90px 0 auto;
+                            }
+                            .skill7{
+                              margin: 180px 0px 0 auto;
+                            }
+                            .skill8{
+                              margin: 180px -90px 0 auto;
+                            }
+
+                            .skill9{
+                              margin: 270px 90px 0 auto;
+                            }
+                            .skill10{
+                              margin: 270px 0px 0 auto;
+                            }
+                            .skill17{
+                              margin: 270px -90px 0 auto;
+                            }
+
+                            .skill11{
+                              margin: 360px 90px 0 auto;
+                            }
+                            .skill12{
+                              margin: 360px 0px 0 auto;
+                            }
+                            .skill13{
+                              margin: 360px -90px 0 auto;
+                            }
+
+                            .skill14{
+                              margin: 450px 90px 0 auto;
+                            }
+                            .skill15{
+                              margin: 450px 0px 0 auto;
+                            }
+                            .skill18{
+                              margin: 450px -90px 0 auto;
+                            }
+                  
+                          .skill1-text{
+                            margin: 0;
+                            padding: 3rem 24.4rem 0rem 2rem;
+                            right: -185px;
+                          }
+                          .skill2-text{
+                            margin: 0;
+                            padding: 3rem 13.25rem 0rem 2rem;
+                            right: -88px;
+                          }
+                          .skill3-text{
+                            margin: 0;
+                            padding: 3rem 0.5rem 0rem 0rem;
+                            right: 5px;
+                          }
+
+                          .skill4-text{
+                            margin: 0;
+                            padding: 8.5rem 18.4rem 0rem 1rem;
+                            right: -88px;
+                          }
+                          .skill5-text{
+                            margin: 0;
+                            padding: 8.5rem 12.2rem 0rem 2rem;
+                            right: -90px;
+                          }
+                          .skill6-text{
+                            margin: 0;
+                            padding: 8.5rem 6.8rem 0rem 2rem;
+                            right: -74px;
+                          }
+
+                          .skill7-text{
+                            margin: 0;
+                            padding: 14rem 18.3rem 0rem 1rem;
+                            right: -88px;
+                          }
+                          .skill8-text{
+                            margin: 0;
+                            padding: 14rem 13.2rem 0rem 2rem;
+                            right: -90px;
+                          }
+                          .skill9-text{
+                            margin: 0;
+                            padding: 14rem 6.9rem 0rem 2rem;
+                            right: -74px;
+                          }
+
+                          .skill10-text{
+                            margin: 0;
+                            padding: 20rem 14rem 0rem 15rem;
+                            right: -20px;
+                          }
+                          .skill11-text{
+                            margin: 0;
+                            padding: 20rem 17rem 0rem 33rem;
+                            right: -147px;
+                          }
+                          .skill12-text{
+                            margin: 0;
+                            padding: 20rem 20.8rem 0rem 0rem;
+                            right: -314px;
+                          }
+
+                          .skill13-text{
+                            margin: 0;
+                            padding: 25rem 18rem 0rem 1rem;
+                            right: -88px;
+                          }
+                          .skill14-text{
+                            margin: 0;
+                            padding: 25rem 11.6rem 0rem 2rem;
+                            right: -82px;
+                          }
+                          .skill15-text{
+                            margin: 0;
+                            padding: 25rem 6.3rem 0rem 2rem;
+                            right: -80px;
+                          }
+
+                          .skill16-text{
+                            margin: 0;
+                            padding: 31rem 13.7rem 0rem 15rem;
+                            right: -7px;
+                          }
+                          .skill17-text{
+                            margin: 0;
+                            padding: 31rem 19.4rem 0rem 33rem;
+                            right: -195px;
+                          }
+                          .skill18-text{
+                            margin: 0;
+                            padding: 31rem 18.2rem 0rem 0rem;
+                            width: 430px;
+                            right: -315px;
+                          }
+
+                            .about-box-outline {
+                              height: 530px;
+                            }
+                            .about-box-container{
+                              height: 600px;
+                            }
+                            
+                            .skills-section { 
+                              padding-top: 135px;
+                              height: 805px;
+                            }
+                            .skills-box-outline{
+                              height: 700px;
+                            }
+                            .skills-box-container{
+                              height: 775px;
+                            }
+
+                            .overlay3{
+                              height: 805px;
+                            }
+              
+                            .projects-section {
+                              padding-top: 65px;
+                              height: 820px;
+                            }                            
+                            }
+
+                            @media (max-width: 654px) {
+  
+                              .about-box-outline {
+                                height: 560px;
+                              }
+                              .about-box-container{
+                                height: 630px;
+                              }
+                              
+                              .skills-section { 
+                                padding-top: 130px;
+                                height: 865px;
+                              }
+                              .overlay3{
+                                height: 865px;
+                              }
+
+                              .projects-section {
+                                padding-top: 30px;
+                                height: 785px;
+                              }
+                              
+                              }
+
+                              @media (max-width: 639px) {
+  
+                                .about-box-outline {
+                                  height: 580px;
+                                }
+                                .about-box-container{
+                                  height: 650px;
+                                }
+                                .about-section{
+                                  height: 715px;
+                                }
+                                
+                                }
+
+                                @media (max-width: 610px) {
+  
+                                  .about-box-outline {
+                                    height: 610px;
+                                  }
+                                  .about-box-container{
+                                    height: 680px;
+                                  }
+                                  .about-section{
+                                    height: 745px;
+                                  }
+                                                                  
+                                  }
+
+@media (max-width: 888px) {
+
+  header.scrolled {
+    background-color: #1c323b !important;
+    transition: background-color 200ms linear;
+    position: fixed;
+    height: 50px;
+  }
+
+  .logo {
+    height: 40px;
+    width: 40px;
+    left: 20px;
+    top: 9px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    height: 25px;
+    width: 25px;
+    right: 30px;
+    top: 16px;
+}
+
+.navbarClicked {
+  height: 25px;
+  width: 25px;
+  right: 30px;
+  top: 16px;
+}
+
+.navbarClicked2 {
+  height: 25px;
+  width: 25px;
+  right: 30px;
+  top: 16px;
+}
+
+  h1{
+    font-size: 3.925rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    top: 115px;
+    width: 100%;
+    left: 0px;
+  }
+
+  .h2-title{
+    font-size: 2.625rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    top: 115px;
+    width: 100%;
+    left: 0px;
+  }
+
+}
+
+@media (max-width: 675px) {
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .h2-title{
+    font-size: 2.5rem;
+  }
+
+}
+
+@media (max-width: 625px) {
+
+  h1{
+    font-size: 3rem;
+    top: 125px;
+  }
+
+  .h2-title{
+    font-size: 2rem;
+    top: 125px;
+  }
+
+}
+
+
+@media (max-width: 565px) {
+
+  h1{
+    font-size: 2.5rem;
+    top: 125px;  
+  }
+  
+  .aboutH2 {
+    font-size: 2.5rem;
+  }
+  .skillsH2 {
+    font-size: 2.5rem;
+  }
+  .projectsH2 {
+    font-size: 2.5rem;
+  }
+  .contactH2 {
+    font-size: 2.5rem;
+  }
+
+  .h2-title{
+    font-size: 1.5rem;
+    top: 125px;  
+  }
+
+}
+
+@media (max-width: 440px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .aboutH2 {
+    font-size: 2rem;
+  }
+  .skillsH2 {
+    font-size: 2rem;
+  }
+  .projectsH2 {
+    font-size: 2rem;
+  }
+  .contactH2 {
+    font-size: 2rem;
+  }
+
+  .h2-title{
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (max-width: 440px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .h2-title{
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (max-width: 358px) {
+  
+  .menu ul li a {
+    font-size: 1.5rem;
+  }
+
+  .overlay2{
+    height: 610px;
+  }
+
+  .overlay3{
+    height: 800px;
+  }
+
+  .overlay4{
+    height: 520px;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  .h2-title{
+    font-size: 1rem;
+  }
+
+  .aboutH2 {
+    width: 120px;
+    font-size: 1.5rem;
+    right: 0px;
+    left: 0px;
+    top: 6px;
+    background-color: #1c323b;
+    padding-bottom: 30px;
+    padding: 0rem 0rem 2rem 0rem;
+}
+.paragraph-1 {
+  font-size: 1rem;
+}
+.about-section {
+  padding-left: 0px;
+  padding-right: 0px;
+  z-index: 4;
+  padding-top: 0px;
+  height: 610px;
+}
+.about-box-outline {
+  height: 575px;
+}
+.about-box-container {
+  height: 610px;
+  background-color: #1c323b;
+}
+
+.skillsH2{
+  top: 0px;
+  width: 150px;
+  font-size: 1.5rem;
+  background-color: #1c323b;
+  padding: 6px 0rem 1rem 0rem;
+}
+.skills-section {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 50px;
+  z-index: 3;
+  height: 800px;
+}
+.skills-box-container{
+  height: 800px;
+  background-color: #1c323b;
+}
+.skills-box-outline{
+  height: 655px;
+}
+.skills-title-bg {
+  display: inline-flex;
+  margin: 0rem;
+}
+.skill-list {
+  position: absolute;
+}
+
+.projectsH2{
+  top: 6px;
+  background-color: #1c323b;
+  width: 110px;
+  font-size: 1.5rem;
+  left: 0px;
+  padding: 0rem 0rem 4rem 0rem;
+  position: inherit;
+}
+.projects-section {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  height: 405px;
+  top: -115px;
+  z-index: 3;
+}
+.projects-box-outline{
+  height: 480px;
+}
+.projects-box-container{
+  height: 520px;
+  background-color: #1c323b;
+  padding-top: 0px;
+}
+.projects-inner {
+  padding-top: 0px;
+}
+
+.contactH2 {
+  font-size: 1.5rem;
+  height: 64px;
+  width: 328px;
+  position: relative;
+  text-align: center;
+  top: 0px;
+  right: 100px;
+  left: 100px;
+}
+
+.circle{
+  height: 35px;
+  width: 35px;
+}
+.skill-font{
+  font-size: 1rem;
+}
+
+.skill1{
+  margin: -30px 90px 0 auto;
+}
+.skill1-text{
+  padding: 0.5rem 20.1rem 0rem 2rem;
+}
+.skill2{
+  margin: -30px 10px 0 auto;
+}
+.skill2-text{
+  padding: 0.5rem 9.6rem 0rem 2rem;
+}
+.skill3{
+  margin: -30px -70px 0 auto;
+}
+.skill3-text{
+  padding: 0.5rem 0rem 0rem 0rem;
+  right: -35px;
+}
+
+.skill4{
+  margin: 60px 90px 0 auto;
+}
+.skill4-text{
+  padding: 6rem 14.3rem 0rem 0rem;
+}
+.skill5{
+  margin: 60px 10px 0 auto;
+}
+.skill5-text{
+  padding: 6rem 8.5rem 0rem 0rem;
+}
+.skill16{
+  margin: 60px -80px 0 auto;
+}
+.skill6-text{
+  padding: 6rem 3.2rem 0rem 0rem;
+}
+
+.skill6{
+  margin: 150px 90px 0 auto;
+}
+.skill7-text{
+  padding: 11.8rem 14.1rem 0rem 1rem;
+}
+.skill7{
+  margin: 150px 10px 0 auto;
+}
+.skill8-text{
+  padding: 11.8rem 9.6rem 0rem 2rem;
+}
+.skill8{
+  margin: 150px -80px 0 auto;
+}
+.skill9-text{
+  padding: 11.8rem 3.4rem 0rem 2rem;
+}
+
+.skill9{
+  margin: 240px 90px 0 auto;
+}
+.skill10-text{
+  padding: 17.5rem 9.9rem 0rem 15rem;
+}
+.skill10{
+  margin: 240px 10px 0 auto;
+}
+.skill11-text{
+  padding: 17.5rem 13.4rem 0rem 33rem;
+}
+.skill17{
+  margin: 240px -80px 0 auto;
+}
+.skill12-text{
+  padding: 17.5rem 17.3rem 0rem 0rem;
+}
+
+.skill11{
+  margin: 330px 90px 0 auto;
+}
+.skill13-text{
+  padding: 23rem 13.8rem 0rem 1rem;
+}
+.skill12{
+  margin: 330px 10px 0 auto;
+}
+.skill14-text{
+  padding: 23rem 8rem 0rem 2rem;
+}
+.skill13{
+  margin: 330px -80px 0 auto;
+}
+.skill15-text{
+  padding: 23rem 2.7rem 0rem 2rem;
+}
+
+.skill14{
+  margin: 420px 90px 0 auto;
+}
+.skill16-text{
+  padding: 29rem 9.5rem 0rem 15rem;
+}
+.skill15{
+  margin: 420px 10px 0 auto;
+}
+.skill17-text{
+  padding: 29rem 15.8rem 0rem 33rem;
+}
+.skill18{
+  margin: 420px -80px 0 auto;
+}
+.skill18-text{
+  padding: 29rem 11rem 0rem 0rem;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-497.5rem, 0, 0);
+  }
+}
+
+@keyframes reverse-ticker {
+  0% {
+    transform: translate3d(-497.5rem, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.img-ticker {
+  white-space: nowrap;
+  margin: 0 0;
+  z-index: +5;
+  position: relative;
+  animation: ticker 60s linear;
+  animation-iteration-count: infinite;
+}
+
+.reverse-img-ticker {
+  white-space: nowrap;
+  margin: 0 0;
+  z-index: +5;
+  position: relative;
+  animation: reverse-ticker 60s linear;
+  animation-iteration-count: infinite;
+}
+
+.slide-item {
+  height: 150px;
+  width: 300px;
+}
+
+.showcase{
+ z-index: 6; 
+}
+
+.contact-section { 
+  padding-top: 125px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  height: 650px;
+}
+.copyright{
+  font-size: 0.7rem;
+}
+.contactH2{
+  display: contents;
+}
+.text-center{
+  padding-bottom: 40px;
+}
+.name-form {
+  height: 45px;
+}
+.email-form {
+  height: 45px;
+}
+.form-group {
+  z-index: 2;
+}
+.btn{
+  height: 45px;
+}
+.mb-5, .my-5 {
+  margin-bottom: 1rem!important;
+}
+footer{
+  margin-top: 50px;
+}
+
+}
+
+
+@media (max-width: 343px) {
+
+.about-section{
+  padding-top: 5px;
+}
+.about-box-outline {
+    height: 620px;
+}
+.overlay2{
+  height: 615px;
+}
+
+.skills-section { 
+  padding-top: 150px;
+}
+.overlay3 {
+  height: 825px;
+}
+
+.projects-section {
+  padding-top: 20px;
+  height: 455px;
+  top: -85px;
+}
+.projects-box-container{
+  height: 520px;
+}
+.overlay4{
+  height: 540px;
+}
+
+}
+
+@media (max-width: 331px) {
+
+.skill-font {
+  font-size: 0.8rem;
+}
+
+.skill1{
+  margin: -30px 70px 0 auto;
+}
+.skill1-text{
+  padding: 0.95rem 19.2rem 0rem 2rem;
+}
+.skill2{
+  margin: -30px 10px 0 auto;
+}
+.skill2-text{
+  padding: 0.95rem 9.8rem 0rem 2rem;
+}
+.skill3{
+  margin: -30px -50px 0 auto;
+}
+.skill3-text{
+  padding: 0.95rem 1.7rem 0rem 0rem;
+}
+
+.skill4{
+  margin: 60px 70px 0 auto;
+}
+.skill4-text{
+  padding: 6.5rem 13.2rem 0rem 0rem;
+}
+.skill5{
+  margin: 60px 10px 0 auto;
+}
+.skill5-text{
+  padding: 6.5rem 8.8rem 0rem 0rem;
+}
+.skill16{
+  margin: 60px -50px 0 auto;
+}
+.skill6-text{
+  padding: 6.5rem 5.1rem 0rem 0rem;
+}
+
+.skill6{
+  margin: 150px 70px 0 auto;
+}
+.skill7-text{
+  padding: 12.1rem 13.1rem 0rem 1rem;
+}
+.skill7{
+  margin: 150px 10px 0 auto;
+}
+.skill8-text{
+  padding: 12.1rem 9.8rem 0rem 2rem;
+}
+.skill8{
+  margin: 150px -50px 0 auto;
+}
+.skill9-text{
+  padding: 12.1rem 5.3rem 0rem 2rem;
+}
+
+.skill9{
+  margin: 240px 70px 0 auto;
+}
+.skill10-text{
+  padding: 17.9rem 8.8rem 0rem 15rem;
+}
+.skill10{
+  margin: 240px 10px 0 auto;
+}
+.skill11-text{
+  padding: 17.9rem 13.6rem 0rem 33rem;
+}
+.skill17{
+  margin: 240px -50px 0 auto;
+}
+.skill12-text{
+  padding: 17.9rem 19.4rem 0rem 0rem;
+}
+
+.skill11{
+  margin: 330px 70px 0 auto;
+}
+.skill13-text{
+  padding: 23.2rem 12.9rem 0rem 1rem;
+}
+.skill12{
+  margin: 330px 10px 0 auto;
+}
+.skill14-text{
+  padding: 23.2rem 8.5rem 0rem 2rem;
+}
+.skill13{
+  margin: 330px -50px 0 auto;
+}
+.skill15-text{
+  padding: 23.2rem 4.9rem 0rem 2rem;
+}
+
+.skill14{
+  margin: 420px 70px 0 auto;
+}
+.skill16-text{
+  padding: 29.2rem 8.4rem 0rem 15rem;
+}
+.skill15{
+  margin: 420px 10px 0 auto;
+}
+.skill17-text{
+  padding: 29.2rem 16rem 0rem 33rem;
+}
+.skill18{
+  margin: 420px -50px 0 auto;
+}
+.skill18-text{
+  padding: 29.2rem 14.6rem 0rem 0rem;
+}
+
+.about-box-outline {
+  height: 645px;
+}
+
+.skills-section { 
+  padding-top: 200px;
+}
+
+.projects-section {
+  padding-top: 40px;
+  top: -77px;
+  height: 483px;
+}
+
+.overlay3 {
+  height: 850px;
+}
+
+.overlay4{
+  height: 560px;
+}
+
+}
+
+@media (max-width: 324px) {
+  .about-box-outline {
+    height: 670px;
+}
+
+.skills-section { 
+  padding-top: 245px;
+}
+
+.projects-section {
+  padding-top: 35px;
+  top: -50px;
+  height: 505px;
+}
+
+.overlay4{
+  height: 555px;
+}
+}
+
+@media (max-width: 298px) {
+  .about-box-outline {
+    height: 720px;
+}
+
+.skills-section { 
+  padding-top: 340px;
+}
+
+.projects-section{
+  top: -7px;
+}
+
+}
+
+@media (max-width: 293px) {
+
+  .skill-font {
+    font-size: 0.7rem;
+  }
+
+  .skill1-text{
+    padding: 0.95rem 19.3rem 0rem 2rem;
+  }
+  .skill2-text{
+    padding: 0.95rem 9.9rem 0rem 2rem;
+  }
+  .skill3-text{
+    padding: 0.95rem 1.8rem 0rem 0rem;
+  }
+  .skill4-text{
+    padding: 6.5rem 13.3rem 0rem 0rem;
+  }
+  .skill5-text{
+    padding: 6.5rem 9rem 0rem 0rem;
+  }
+  .skill6-text{
+    padding: 6.5rem 5.2rem 0rem 0rem;
+  }
+  .skill7-text{
+    padding: 12.1rem 13.2rem 0rem 1rem;
+  }
+  .skill8-text{
+    padding: 12.1rem 9.9rem 0rem 2rem;
+  }
+  .skill9-text{
+    padding: 12.1rem 5.4rem 0rem 2rem;
+  }
+  .skill10-text{
+    padding: 17.9rem 8.9rem 0rem 15rem;
+  }
+  .skill11-text{
+    padding: 17.9rem 13.7rem 0rem 33rem;
+  }
+  .skill12-text{
+    padding: 17.9rem 19.6rem 0rem 0rem;
+  }
+  .skill13-text{
+    padding: 23.2rem 13.1rem 0rem 1rem;
+  }
+  .skill14-text{
+    padding: 23.2rem 8.7rem 0rem 2rem;
+  }
+  .skill15-text{
+    padding: 23.2rem 5rem 0rem 2rem;
+  }
+  .skill16-text{
+    padding: 29.2rem 8.4rem 0rem 15rem;
+  }
+  .skill17-text{
+    padding: 29.2rem 16.2rem 0rem 33rem;
+  }
+  .skill18-text{
+    padding: 29.2rem 14.7rem 0rem 0rem;
+  }
+
+  .about-box-outline {
+    height: 745px;
+}
+
+.skills-section { 
+  padding-top: 400px;
+}
+
+.projects-section {
+  top: 23px;
+}
+
+}
+
+@media (max-width: 291px) {
+  .about-box-outline {
+    height: 770px;
+}
+
+.skills-section { 
+  padding-top: 440px;
+}
+
+.projects-section{
+  top: 43px;
+}
+
+}
+
+@media (max-width: 290px) {
+
+.paragraph-1{
+  margin: 0 3rem 0 3rem;
+  font-size: 0.9rem;
+}
+
+.about-box-outline {
+  height: 580px;
+}
+
+.skills-section { 
+  padding-top: 60px;
+  padding-bottom: 0px;
+  height: 720px;
+}
+
+.skills-box-container { 
+  padding-top: 0px;
+  height: 730px;
+}
+
+.projects-section{
+  top: -62px;
+  height: 493px;
+}
+
+}
+
+@media (max-width: 280px) {
+  
+  .about-box-outline {
+    height: 595px;
+  }
+  
+  .skills-section { 
+    padding-top: 80px;
+    padding-bottom: 0px;
+    height: 720px;
+  }
+  
+  .skills-box-container { 
+    padding-top: 0px;
+    height: 730px;
+  }
+  
+  .projects-section{
+    top: -52px;
+  }
+  
+  }
+
+  @media (max-width: 274px) {
+
+  .paragraph-1 {
+    font-size: 0.8rem;
+  }
+
+.circle {
+  height: 25px;
+  width: 25px;
+}
+
+.skill-font {
+  font-size: 0.65rem;
+}
+
+.skill1-text{
+  padding: 0.5rem 18.7rem 0rem 2rem;
+}
+.skill2-text{
+  padding: 0.5rem 9.8rem 0rem 2rem;
+}
+.skill3-text{
+  padding: 0.5rem 2.5rem 0rem 2rem;
+}
+
+.skill4-text{
+  padding: 5rem 12.8rem 0rem 0rem;
+}
+.skill5-text{
+  padding: 5rem 9.2rem 0rem 0rem;
+}
+.skill6-text{
+  padding: 5rem 5.8rem 0rem 0rem;
+}
+
+.skill7-text{
+  padding: 9.7rem 12.7rem 0rem 1rem;
+}
+.skill8-text{
+  padding: 9.7rem 10rem 0rem 2rem;
+}
+.skill9-text{
+  padding: 9.7rem 6rem 0rem 2rem;
+}
+
+.skill10-text{
+  padding: 14.5rem 8.4rem 0rem 15rem;
+}
+.skill11-text{
+  padding: 14.5rem 13.6rem 0rem 33rem;
+}
+.skill12-text{
+  padding: 14.5rem 20.2rem 0rem 0rem;
+}
+
+.skill13-text{
+  padding: 19rem 12.5rem 0rem 1rem;
+}
+.skill14-text{
+  padding: 19rem 8.6rem 0rem 2rem;
+}
+.skill15-text{
+  padding: 19rem 5.7rem 0rem 2rem;
+}
+
+.skill16-text{
+  padding: 24rem 7.85rem 0rem 15rem;
+}
+.skill17-text{
+  padding: 24rem 16.2rem 0rem 33rem;
+}
+.skill18-text{
+  padding: 24rem 15.9rem 0rem 0rem;
+}
+
+
+.skill1{
+  margin: -30px 65px 0 auto;
+}
+.skill2{
+  margin: -30px 15px 0 auto;
+}
+.skill3{
+  margin: -30px -35px 0 auto;
+}
+
+.skill4{
+  margin: 45px 65px 0 auto;
+}
+.skill5{
+  margin: 45px 15px 0 auto;
+}
+.skill16{
+  margin: 45px -35px 0 auto;
+}
+
+.skill6{
+  margin: 120px 65px 0 auto;
+}
+.skill7{  
+  margin: 120px 15px 0 auto;
+}
+.skill8{
+  margin: 120px -35px 0 auto;
+}
+
+.skill9{
+  margin: 195px 65px 0 auto;
+}
+.skill10{
+  margin: 195px 15px 0 auto;
+}
+.skill17{
+  margin: 195px -35px 0 auto;
+}
+
+.skill11{
+  margin: 270px 65px 0 auto;
+}
+.skill12{
+  margin: 270px 15px 0 auto;
+}
+.skill13{
+  margin: 270px -35px 0 auto;
+}
+
+.skill14{
+  margin: 345px 65px 0 auto;
+}
+.skill15{
+  margin: 345px 15px 0 auto;
+}
+.skill18{
+  margin: 345px -35px 0 auto;
+}
+
+    .about-section{
+      height: 545px;
+    }
+
+    .about-box-container{
+      height: 500px;
+    }
+  
+    .about-box-outline {
+      height: 485px;
+    }
+
+    .overlay2{
+      height: 545px;
+    }
+    
+    .skills-section { 
+      padding-top: 0px;
+      height: 520px;
+      top: 50px;
+    }
+    
+    .skills-box-container { 
+      padding-top: 0px;
+      height: 635px;
+    }
+
+    .skills-box-outline{
+      height: 565px;
+    }
+
+    .overlay3{
+      top: -50px;
+    }
+
+    .projects-section{
+      top: 16px;
+    }
+    
+    }
+
+      @media (max-width: 270px) {
+  
+      .about-box-outline {
+        height: 525px;
+      }
+
+      .overlay3{
+        top: -60px;
+      }
+
+      .skills-box-container{
+        padding-top: 35px;
+      }
+
+      .skills-box-outline{
+        height: 565px;
+      }
+
+      .projects-section{
+        top: 58px;
+      }
+      
+      }
+
+      @media (max-width: 261px) {
+  
+        .about-box-outline {
+          height: 540px;
+        }
+
+        .skills-box-container{
+          padding-top: 55px;
+        }
+
+        .projects-section{
+          top: 71px;
+        }
+        
+        }
+
+        @media (max-width: 256px) {
+  
+          .about-box-outline {
+            height: 560px;
+          }
+
+          .skills-box-container{
+            padding-top: 75px;
+          }
+  
+          .projects-section{
+            top: 91px;
+          }
+          
+          }
+
+    /* @media (max-width: 251px) {
+  
+      .about-box-outline {
+        height: 640px;
+      }
+      
+      .skills-section { 
+        padding-top: 125px;
+      }
+      
+      .skills-box-container { 
+        padding-top: 0px;
+      }
+      
+      .projects-section {
+        padding-top: 90px;
+        height: 615px;
+      }
+      
+      .overlay3 {
+        height: 788px;
+      }
+      
+      } */

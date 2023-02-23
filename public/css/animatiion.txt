@@ -1,0 +1,298 @@
+* { box-sizing: border-box; }
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+  position: relative;
+  bottom: -150px;
+  width: 100%;
+  /* overflow: hidden; */
+  height: 4rem;
+  background-color: rgba(#000, 0.9);
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+
+.ticker-stop:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.ticker {
+  display: flex;
+  position: relative;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 30s;
+  animation-duration: 10s;
+
+}
+
+.__item {
+
+  display: inline-block;
+
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: white;   
+
+}
+
+
+
+
+
+
+
+
+<div class="ticker-wrap">
+<div class="ticker ticker-stop">
+
+          <div className="ticker item active">
+          <img className="slide-item first-slide" src={Spacetourism} alt="First slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item second-slide" src={Drumkit} alt="Second slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item third-slide" src={Simonsgame} alt="Third slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item fourth-slide" src={Tindog} alt="Fourth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item fifth-slide" src={Newslettersignup} alt="Fifth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item sixth-slide" src={Dicegame} alt="Sixth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item seventh-slide" src={Personalsite} alt="Seventh slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item eighth-slide" src={Blogwebsite} alt="Eighth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item ninth-slide" src={Emojipedia} alt="Ninth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item tenth-slide" src={Keeperapp} alt="Tenth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item eleventh-slide" src={Timeapp} alt="Eleventh slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item twelveth-slide" src={Todolistv1} alt="Twelveth slide" /> 
+          </div>
+          <div className="ticker item">
+          <img className="slide-item thirteenth-slide" src={Todolistv2} alt="Thirteenth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item fourteenth-slide" src={Spreadoperator} alt="Fourteeth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item fifteenth-slide" src={Secretswebsite} alt="Fifteenth slide" />
+          </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <div class="ticker-wrap">
+<div class="ticker ticker-stop">
+
+          <div className="ticker item active">
+          <img className="slide-item first-slide" src={Spacetourism} alt="First slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item second-slide" src={Drumkit} alt="Second slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item third-slide" src={Simonsgame} alt="Third slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item fourth-slide" src={Tindog} alt="Fourth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item fifth-slide" src={Newslettersignup} alt="Fifth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item sixth-slide" src={Dicegame} alt="Sixth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item seventh-slide" src={Personalsite} alt="Seventh slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item eighth-slide" src={Blogwebsite} alt="Eighth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item ninth-slide" src={Emojipedia} alt="Ninth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item tenth-slide" src={Keeperapp} alt="Tenth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item eleventh-slide" src={Timeapp} alt="Eleventh slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item twelveth-slide" src={Todolistv1} alt="Twelveth slide" /> 
+          </div>
+          <div className="ticker item">
+          <img className="slide-item thirteenth-slide" src={Todolistv2} alt="Thirteenth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item fourteenth-slide" src={Spreadoperator} alt="Fourteeth slide" />
+          </div>
+          <div className="ticker item">
+          <img className="slide-item fifteenth-slide" src={Secretswebsite} alt="Fifteenth slide" />
+          </div>
+
+</div>
+</div> */}
+
+{/* <div style={fadeOutEffect} id="myCarousel" className={projectListclassName} data-ride="carousel" data-interval="10000" data-pause="hover"> */}
+        
+        {/* <ol className="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
+          <li data-target="#myCarousel" data-slide-to="8"></li>
+          <li data-target="#myCarousel" data-slide-to="9"></li>
+          <li data-target="#myCarousel" data-slide-to="10"></li>
+          <li data-target="#myCarousel" data-slide-to="11"></li>
+          <li data-target="#myCarousel" data-slide-to="12"></li>
+          <li data-target="#myCarousel" data-slide-to="13"></li>
+          <li data-target="#myCarousel" data-slide-to="14"></li>
+        </ol> */}
+        
+        {/* <div className="carousel-inner">
+
+          <div className="carousel-item active">
+          <img className="slide-item first-slide" src={Spacetourism} alt="First slide" />
+          </div>
+          <div className="carousel-item">
+          <img className="slide-item second-slide" src={Drumkit} alt="Second slide" />
+          </div>
+          <div className="carousel-item">
+          <img className="slide-item third-slide" src={Simonsgame} alt="Third slide" />
+          </div>
+          <div className="carousel-item">
+          <img className="slide-item fourth-slide" src={Tindog} alt="Fourth slide" />
+          </div>
+          <div className="carousel-item">
+          <img className="slide-item fifth-slide" src={Newslettersignup} alt="Fifth slide" />
+          </div>
+          <div className="carousel-item">
+          <img className="slide-item sixth-slide" src={Dicegame} alt="Sixth slide" />
+          </div>
+          <div className="carousel-item">
+          <img className="slide-item seventh-slide" src={Personalsite} alt="Seventh slide" />
+          </div>
+          <div className="carousel-item">
+          <img className="slide-item eighth-slide" src={Blogwebsite} alt="Eighth slide" />
+          </div>
+          <div className="carousel-item">
+          <img className="slide-item ninth-slide" src={Emojipedia} alt="Ninth slide" />
+          </div>
+          <div className="carousel-item">
+          <img className="slide-item tenth-slide" src={Keeperapp} alt="Tenth slide" />
+          </div>
+          <div className="carousel-item">
+          <img className="slide-item eleventh-slide" src={Timeapp} alt="Eleventh slide" />
+          </div>
+          <div className="carousel-item">
+          <img className="slide-item twelveth-slide" src={Todolistv1} alt="Twelveth slide" /> 
+          </div>
+          <div className="carousel-item">
+          <img className="slide-item thirteenth-slide" src={Todolistv2} alt="Thirteenth slide" />
+          </div>
+          <div className="carousel-item">
+          <img className="slide-item fourteenth-slide" src={Spreadoperator} alt="Fourteeth slide" />
+          </div>
+          <div className="carousel-item">
+          <img className="slide-item fifteenth-slide" src={Secretswebsite} alt="Fifteenth slide" />
+          </div>
+
+        </div>
+        <a className="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </a>
+        <a className="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a> */}
+      {/* </div> */}
