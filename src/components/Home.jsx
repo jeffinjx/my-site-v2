@@ -228,7 +228,7 @@ function Home(){
 
   <section id="home" className="showcase">
 
-  <video className="myVideo" src="assets/videos/sunshine.mp4" playsInline autoPlay muted loop type="video/mp4"></video>
+  <video className="myVideo" src="assets/videos/code.mp4" playsInline autoPlay muted loop type="video/mp4"></video>
   <div className="overlay"></div>
 
       <h1 style={fadeOutEffect}>{startingH1}</h1>

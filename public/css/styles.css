@@ -32,10 +32,6 @@
   color: var(--font-color);
 }
 
-html{
-  overflow-x: hidden;
-}
-
 a {
   color: var(--font-color);
 }
@@ -351,10 +347,10 @@ button:focus {
   filter: var(--navbar-color-dark);
   background-image: url(https://i.ibb.co/HrfVRcx/menu.png);
   position: fixed;
-  height: 35px;
-  width: 35px;
-  right: 45px;
-  top: 45px; 
+  height: 50px;
+  width: 50px;
+  right: 23px;
+  top: 50px; 
 }
 
 .navbar {
@@ -415,10 +411,10 @@ button:focus {
   filter: var(--navbar-color-dark);  
   position: fixed;
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  right: 45px;
-  top: 45px; 
+  height: 50px;
+  width: 50px;
+  right: 23px;
+  top: 50px; 
   vertical-align: middle;
   content: "";
   background: no-repeat center center;
@@ -456,10 +452,10 @@ button:focus {
   filter: var(--navbar-color-dark);  
   position: fixed;
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  right: 45px;
-  top: 45px;
+  height: 50px;
+  width: 50px;
+  right: 23px;
+  top: 50px; 
   vertical-align: middle;
   content: "";
   background: no-repeat center center;
@@ -584,12 +580,12 @@ button:focus {
   position: relative;
   align-items: center;
   display: flex;
-  border-bottom: 3px solid #ce5c07;
+  border-bottom: 3px solid #1e8dc2;
 }
 
 .btn:hover {
   background-color: #25414c;
-  color: #ce5c07;
+  color: #1e8dc2;
 }
 
 .btn:not(:disabled):not(.disabled) {
@@ -1085,9 +1081,9 @@ button.navbar-toggler{
   filter: var(--navbar-color-light);
   filter: var(--navbar-color-dark);  
   position: fixed;
-  height: 50px;
-  width: 50px;
-  left: 45px;
+  height: 75px;
+  width: 75px;
+  left: 10px;
   top: 40px; 
 }
 
@@ -1225,7 +1221,7 @@ footer p {
 .about-box-outline {
   position: relative;
   height: 380px;
-  outline: 3px solid #ce5c07;
+  outline: 3px solid #1e8dc2;
   outline-offset: -25px;
 }
 
@@ -1242,12 +1238,13 @@ footer p {
   padding-top: 40px;
   background-color: #25414c;
   z-index: 1;
+  overflow: hidden;
 }
 
 .skills-box-outline {
   position: relative;
   height: 595px;
-  outline: 3px solid #ce5c07;
+  outline: 3px solid #1e8dc2;
   outline-offset: -25px;
 }
 
@@ -1268,7 +1265,7 @@ footer p {
 .projects-box-outline {
   position: relative;
   height: 620px;
-  outline: 3px solid #ce5c07;
+  outline: 3px solid #1e8dc2;
   outline-offset: -25px;
 }
 
@@ -1321,7 +1318,7 @@ footer p {
   outline: none;
   box-shadow: none !important;
   background-color: #25414c !important;
-  border-bottom: 3px solid #ce5c07;
+  border-bottom: 3px solid #1e8dc2;
 }
 
 input:-webkit-autofill,
@@ -2401,39 +2398,43 @@ textarea {
 
 @media (max-width: 888px) {
 
+  /* .overlay{
+    background: none;
+  } */
+
   header.scrolled {
-    background-color: #1c323b !important;
+    background-color: #14232a !important;
     transition: background-color 200ms linear;
     position: fixed;
-    height: 50px;
+    height: 80px;
   }
 
   .logo {
-    height: 40px;
-    width: 40px;
+    height: 65px;
+    width: 65px;
     left: 20px;
-    top: 9px;
+    top: 5px;
 }
 
 .navbar-dark .navbar-toggler-icon {
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
     right: 30px;
-    top: 16px;
+    top: 20px;
 }
 
 .navbarClicked {
-  height: 25px;
-  width: 25px;
+  height: 40px;
+  width: 40px;
   right: 30px;
-  top: 16px;
+  top: 20px;
 }
 
 .navbarClicked2 {
-  height: 25px;
-  width: 25px;
+  height: 40px;
+  width: 40px;
   right: 30px;
-  top: 16px;
+  top: 20px;
 }
 
   h1{
@@ -2512,9 +2513,9 @@ textarea {
 
 @media (max-width: 440px) {
 
-  h1 {
+  /* h1 {
     font-size: 2rem;
-  }
+  } */
 
   .aboutH2 {
     font-size: 2rem;
@@ -2529,13 +2530,53 @@ textarea {
     font-size: 2rem;
   }
 
-  .h2-title{
+  /* .h2-title{
     font-size: 1.2rem;
-  }
+  } */
 
 }
 
 @media (max-width: 480px) {
+
+  header.scrolled {
+    background-color: #14232a !important;
+    transition: background-color 200ms linear;
+    position: fixed;
+    height: 80px;
+  }
+
+  .logo.scrolled {
+    transition: 100ms linear;
+    height: 60px;
+    width: 60px;
+    left: 20px;
+    top: 25px;
+}
+
+.navbar-toggler-icon.scrolled {
+  transition: 100ms linear;
+  height: 35px;
+  width: 35px;
+  right: 30px;
+  top: 25px;
+}
+
+.navbarClicked.scrolled {
+  transition: 100ms linear;
+  height: 35px;
+  width: 35px;
+  right: 30px;
+  top: 25px;
+}
+
+.navbarClicked2.scrolled {
+  transition: 100ms linear;
+  height: 35px;
+  width: 35px;
+  right: 30px;
+  top: 25px;
+}
+
     
   .menu ul li a {
     font-size: 1.5rem;
@@ -2554,12 +2595,10 @@ textarea {
   }
 
   h1{
-    font-size: 1.5rem;
-    top: 170px;
+    top: 160px;
   }
 
   .h2-title{
-    font-size: 1rem;
     top: 145px;
   }
 
@@ -2657,11 +2696,6 @@ textarea {
 }
 .projects-inner {
   padding-top: 0px;
-}
-
-.contact-section{
-  height: 440px;
-  padding-top: 100px;
 }
 
 footer{
@@ -2850,11 +2884,11 @@ footer{
 }
 
 .contact-section { 
-  padding-top: 125px;
+  padding-top: 160px;
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
-  height: 650px;
+  height: 740px;
 }
 .copyright{
   font-size: 0.7rem;
@@ -2881,7 +2915,7 @@ footer{
   margin-bottom: 1rem!important;
 }
 footer{
-  margin-top: 50px;
+  margin-top: 90px;
 }
 }
 
@@ -2909,9 +2943,6 @@ footer{
   }
   .projects-section{
     top: -95px;
-  }
-  .contact-section{
-    height: 695px;
   }
 }
 
@@ -2957,12 +2988,15 @@ footer{
     height: 520px;
   }
 
-  h1{
+  /* h1{
     font-size: 1.5rem;
+  } */
+  h1{
+    font-size: 2rem;
   }
 
   .h2-title{
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .aboutH2 {
@@ -3232,13 +3266,6 @@ footer{
  z-index: 6; 
 }
 
-.contact-section { 
-  padding-top: 125px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  height: 650px;
-}
 .copyright{
   font-size: 0.7rem;
 }
@@ -3262,9 +3289,6 @@ footer{
 }
 .mb-5, .my-5 {
   margin-bottom: 1rem!important;
-}
-footer{
-  margin-top: 50px;
 }
 
 }
@@ -3624,11 +3648,11 @@ footer{
   
   }
 
-  @media (max-width: 274px) {
+@media (max-width: 274px) {
 
-  .paragraph-1 {
-    font-size: 0.8rem;
-  }
+.paragraph-1 {
+  font-size: 0.8rem;
+}
 
 .circle {
   height: 25px;
@@ -3798,6 +3822,14 @@ footer{
     .projects-section{
       top: 16px;
     }
+
+    .contact-section{
+      padding-top: 200px;
+    }
+
+    footer{
+      margin-top: 60px;
+    }
     
     }
 
@@ -3826,6 +3858,10 @@ footer{
       }
 
       @media (max-width: 261px) {
+
+        h1 {
+          font-size: 1.5rem;
+        }
   
         .about-box-outline {
           height: 540px;
