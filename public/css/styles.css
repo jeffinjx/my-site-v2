@@ -1032,8 +1032,8 @@ position: absolute;
 
 .download-button{  
   display: flex;
-  bottom: 25px;
-  left: -5px;
+  bottom: 20px;
+  left: -10px;
   position: absolute;
 }
 
@@ -2543,10 +2543,6 @@ textarea {
 
 @media (max-width: 480px) {
 
-  body{
-    overflow-y: hidden;
-  }
-
   .skills-title-bg{
     background-color: #1c323b;
   }
@@ -2584,26 +2580,26 @@ textarea {
 
 .navbar-dark .navbar-toggler-icon{
   filter: var(--navbar-color-light);  
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
   right: 30px;
-  top: 25px;
+  top: 20px;
 }
 
 .navbarClicked {
   filter: var(--navbar-color-light);  
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
   right: 30px;
-  top: 25px;
+  top: 20px;
 }
 
 .navbarClicked2 {
   filter: var(--navbar-color-light);
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
   right: 30px;
-  top: 25px;
+  top: 20px;
 }
 
     
