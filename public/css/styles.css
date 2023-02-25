@@ -24,6 +24,15 @@
 
 }
 
+#skills{
+  scroll-margin-top: 140px;
+}
+
+#projects{
+  scroll-margin-top: 115px;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -160,7 +169,7 @@ header{
   justify-content: space-between;
   align-items: center;
   transition: 0.5s;
-  z-index: 2;
+  z-index: 3;
 }
 
 .showcase video{
@@ -256,7 +265,7 @@ header{
   right: 0;
   /* width: 300px; */
   width: 100%;
-  height: 100%;
+  height: 695px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,10 +427,8 @@ button:focus {
   vertical-align: middle;
   content: "";
   background: no-repeat center center;
-  background-size: 100% 100%;  
   background-image: url(https://i.ibb.co/rt3HybH/close.png);
-  height: 35px;
-  width: 35px;
+  background-size: 100% 100%;  
   -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
   animation-duration: 1s;
@@ -461,8 +468,6 @@ button:focus {
   background: no-repeat center center;
   background-size: 100% 100%;  
   background-image: url(https://i.ibb.co/HrfVRcx/menu.png);
-  height: 35px;
-  width: 35px;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   animation-duration: 1.5s;
@@ -2538,6 +2543,26 @@ textarea {
 
 @media (max-width: 480px) {
 
+  .skills-title-bg{
+    background-color: #1c323b;
+  }
+ 
+#about{
+  scroll-margin-top: 80px;
+}
+
+#skills{
+  scroll-margin-top: 115px;
+}
+
+#projects{
+  scroll-margin-top: 115px;
+}
+
+#contact{
+  scroll-margin-top: 15px;
+}
+
   header.scrolled {
     background-color: #14232a !important;
     transition: background-color 200ms linear;
@@ -2569,7 +2594,7 @@ textarea {
   top: 25px;
 }
 
-.navbarClicked2.scrolled {
+.navbarClicked2 {
   filter: var(--navbar-color-light);
   height: 35px;
   width: 35px;
@@ -2595,7 +2620,7 @@ textarea {
   }
 
   h1{
-    top: 115px;
+    top: 140px;
   }
 
   .h2-title{
@@ -3308,7 +3333,7 @@ footer{
 }
 
 
-@media (max-width: 343px) {
+@media (max-width: 342px) {
 
 .about-section{
   padding-top: 5px;

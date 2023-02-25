@@ -297,70 +297,70 @@ function Home(){
 
       </section>
 
-        <section className="skills-section color-1c323b">
+        <section id="skills" className="skills-section color-1c323b">
             <div className="overlay3"></div>
 
             <div className="skills-box-container">
             <div className="skills-box-outline">
             <div className="skills-title-bg">
 
-            <h2 className="skillsH2" id="skills" style={fadeOutEffect}>{startingSkillsH2}</h2>
+            <h2 style={fadeOutEffect} className="skillsH2">{startingSkillsH2}</h2>
 
             <div style={fadeOutEffect} className={skillListclassName}>
 
-            <Html className="skill1 circle" />
-            <p className="skill1-text skill-font">HTML</p>
+            <Html style={fadeOutEffect} className="skill1 circle" />
+            <p style={fadeOutEffect} className="skill1-text skill-font">HTML</p>
 
-            <Css className="skill2 circle" />
-            <p className="skill2-text skill-font">CSS</p>
+            <Css style={fadeOutEffect} className="skill2 circle" />
+            <p style={fadeOutEffect} className="skill2-text skill-font">CSS</p>
             
-            <JavaScript className="skill3 circle" />
-            <p className="skill3-text skill-font">JavaScript</p>
+            <JavaScript style={fadeOutEffect} className="skill3 circle" />
+            <p style={fadeOutEffect} className="skill3-text skill-font">JavaScript</p>
             
-            <Reactjs className="skill4 circle" />
-            <p className="skill4-text skill-font">React</p>
+            <Reactjs style={fadeOutEffect} className="skill4 circle" />
+            <p style={fadeOutEffect} className="skill4-text skill-font">React</p>
             
-            <Bootstrap className="skill5 circle" />
-            <p className="skill5-text skill-font">Bootstrap</p>
+            <Bootstrap style={fadeOutEffect} className="skill5 circle" />
+            <p style={fadeOutEffect} className="skill5-text skill-font">Bootstrap</p>
             
-            <Ejs className="skill6 circle" />
-            <p className="skill6-text skill-font">EJS</p>
+            <Ejs style={fadeOutEffect} className="skill6 circle" />
+            <p style={fadeOutEffect} className="skill6-text skill-font">EJS</p>
             
-            <Jquery className="skill7 circle" />
-            <p className="skill7-text skill-font">jQuery</p>
+            <Jquery style={fadeOutEffect} className="skill7 circle" />
+            <p style={fadeOutEffect} className="skill7-text skill-font">jQuery</p>
             
-            <Less className="skill8 circle" />
-            <p className="skill8-text skill-font">Less</p>
+            <Less style={fadeOutEffect} className="skill8 circle" />
+            <p style={fadeOutEffect} className="skill8-text skill-font">Less</p>
             
-            <Git className="skill9 circle" />
-            <p className="skill9-text skill-font">Git</p>
+            <Git style={fadeOutEffect} className="skill9 circle" />
+            <p style={fadeOutEffect} className="skill9-text skill-font">Git</p>
             
-            <Github className="skill10 circle" />
-            <p className="skill10-text skill-font">Github</p>
+            <Github style={fadeOutEffect} className="skill10 circle" />
+            <p style={fadeOutEffect} className="skill10-text skill-font">Github</p>
             
-            <Seo className="skill11 circle" />
-            <p className="skill11-text skill-font">SEO</p>
+            <Seo style={fadeOutEffect} className="skill11 circle" />
+            <p style={fadeOutEffect} className="skill11-text skill-font">SEO</p>
             
-            <Security className="skill12 circle" />
-            <p className="skill12-text skill-font">Security</p>
+            <Security style={fadeOutEffect} className="skill12 circle" />
+            <p style={fadeOutEffect} className="skill12-text skill-font">Security</p>
             
-            <Nodejs className="skill13 circle" />
-            <p className="skill13-text skill-font">Node.js</p>
+            <Nodejs style={fadeOutEffect} className="skill13 circle" />
+            <p style={fadeOutEffect} className="skill13-text skill-font">Node.js</p>
             
-            <Mongodb className="skill14 circle" />
-            <p className="skill14-text skill-font">MongoDB</p>
+            <Mongodb style={fadeOutEffect} className="skill14 circle" />
+            <p style={fadeOutEffect} className="skill14-text skill-font">MongoDB</p>
             
-            <Express className="skill15 circle" />
-            <p className="skill15-text skill-font">Express</p>
+            <Express style={fadeOutEffect} className="skill15 circle" />
+            <p style={fadeOutEffect} className="skill15-text skill-font">Express</p>
             
-            <Sql className="skill16 circle" />
-            <p className="skill16-text skill-font">SQL</p>
+            <Sql style={fadeOutEffect} className="skill16 circle" />
+            <p style={fadeOutEffect} className="skill16-text skill-font">SQL</p>
             
-            <HyperTerminal className="skill17 circle" />
-            <p className="skill17-text skill-font">Hyper</p>
+            <HyperTerminal style={fadeOutEffect} className="skill17 circle" />
+            <p style={fadeOutEffect} className="skill17-text skill-font">Hyper</p>
             
-            <Vscode className="skill18 circle" />
-            <p className="skill18-text skill-font">VS Code</p>
+            <Vscode style={fadeOutEffect} className="skill18 circle" />
+            <p style={fadeOutEffect} className="skill18-text skill-font">VS Code</p>
 
 </div>
 
@@ -373,11 +373,11 @@ function Home(){
 
       </section> 
 
-        <section className="projects-section color-1c323b">
+        <section id="projects" className="projects-section color-1c323b">
 
       <div className="overlay4"></div>
       <div className="projects-box-container">
-      <div id="projects" className="projects-box-outline">
+      <div className="projects-box-outline">
       <div className="projects-title-bg">
             
             <h2 className="projectsH2" style={fadeOutEffect}>{startingProjectsH2}</h2>
