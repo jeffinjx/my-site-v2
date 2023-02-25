@@ -343,7 +343,7 @@ button:focus {
 }
 
 .navbar-dark .navbar-toggler-icon {
-  filter: var(--navbar-color-light);
+  /* filter: var(--navbar-color-light); */
   filter: var(--navbar-color-dark);
   background-image: url(https://i.ibb.co/HrfVRcx/menu.png);
   position: fixed;
@@ -407,7 +407,7 @@ button:focus {
 } */
 
 .navbarClicked {
-  filter: var(--navbar-color-light);
+  /* filter: var(--navbar-color-light); */
   filter: var(--navbar-color-dark);  
   position: fixed;
   display: inline-block;
@@ -448,7 +448,7 @@ button:focus {
 }
 
 .navbarClicked2 {
-  filter: var(--navbar-color-light);
+  /* filter: var(--navbar-color-light); */
   filter: var(--navbar-color-dark);  
   position: fixed;
   display: inline-block;
@@ -1078,7 +1078,7 @@ button.navbar-toggler{
 }
 
 .logo {
-  filter: var(--navbar-color-light);
+  /* filter: var(--navbar-color-light); */
   filter: var(--navbar-color-dark);  
   position: fixed;
   height: 75px;
@@ -1289,6 +1289,10 @@ footer p {
   background-color: #25414c;
 }
 
+.form-control:focus {
+  color: #E3DBD0;
+} 
+
 .name-form{
   height: 60px;
   border-bottom: 3px solid #1c323b;
@@ -1306,11 +1310,7 @@ footer p {
 
 /* .form-control:focus {
   background-color: #25414c;
-}
-
-.form-control:active {
-  background-color: #25414c;
-} */
+}*/
 
 .form-control:hover, 
 .form-control:focus, 
@@ -2545,24 +2545,24 @@ textarea {
     height: 80px;
   }
 
-  .logo.scrolled {
-    transition: 100ms linear;
+  .logo {
+    filter: var(--navbar-color-light);
     height: 60px;
     width: 60px;
     left: 20px;
-    top: 25px;
+    top: 9px;
 }
 
-.navbar-toggler-icon.scrolled {
-  transition: 100ms linear;
+.navbar-dark .navbar-toggler-icon{
+  filter: var(--navbar-color-light);  
   height: 35px;
   width: 35px;
   right: 30px;
   top: 25px;
 }
 
-.navbarClicked.scrolled {
-  transition: 100ms linear;
+.navbarClicked {
+  filter: var(--navbar-color-light);  
   height: 35px;
   width: 35px;
   right: 30px;
@@ -2570,7 +2570,7 @@ textarea {
 }
 
 .navbarClicked2.scrolled {
-  transition: 100ms linear;
+  filter: var(--navbar-color-light);
   height: 35px;
   width: 35px;
   right: 30px;
@@ -2595,11 +2595,11 @@ textarea {
   }
 
   h1{
-    top: 160px;
+    top: 115px;
   }
 
   .h2-title{
-    top: 145px;
+    top: 100px;
   }
 
   .aboutH2 {
@@ -2734,11 +2734,11 @@ footer{
   padding: 0.5rem 9.6rem 0rem 2rem;
 }
 .skill3{
-  margin: -30px -70px 0 auto;
+  margin: -30px -80px 0 auto;
 }
 .skill3-text{
   padding: 0.5rem 0rem 0rem 0rem;
-  right: -35px;
+  right: -45px;
 }
 
 .skill4{
@@ -2929,6 +2929,10 @@ footer{
 .projects-section{
   padding-top: 10px;
 }
+.contact-section{
+  padding-top: 180px;
+  height: 760px;
+}
 .overlay4 {
   height: 530px;
 }
@@ -2944,6 +2948,10 @@ footer{
   .projects-section{
     top: -95px;
   }
+  .contact-section{
+    padding-top: 200px;
+    height: 780px;
+  }
 }
 
 @media (max-width: 386px) {
@@ -2956,6 +2964,9 @@ footer{
   .projects-section{
     top: -75px;
   }
+  .contact-section{
+    height: 800px;
+  }
 }
 
 @media (max-width: 374px) {
@@ -2967,6 +2978,9 @@ footer{
   }
   .projects-section{
     top: -50px;
+  }
+  .contact-section{
+    height: 820px;
   }
 }
 
@@ -3117,11 +3131,11 @@ footer{
   padding: 0.5rem 9.6rem 0rem 2rem;
 }
 .skill3{
-  margin: -30px -70px 0 auto;
+  margin: -30px -80px 0 auto;
 }
 .skill3-text{
   padding: 0.5rem 0rem 0rem 0rem;
-  right: -35px;
+  right: -45px;
 }
 
 .skill4{
@@ -3349,7 +3363,7 @@ footer{
   margin: -30px -50px 0 auto;
 }
 .skill3-text{
-  padding: 0.95rem 1.7rem 0rem 0rem;
+  padding: 0.95rem 2.2rem 0rem 0rem;
 }
 
 .skill4{
@@ -3519,7 +3533,7 @@ footer{
     padding: 0.95rem 9.9rem 0rem 2rem;
   }
   .skill3-text{
-    padding: 0.95rem 1.8rem 0rem 0rem;
+    padding: 0.95rem 2.5rem 0rem 0rem;
   }
   .skill4-text{
     padding: 6.5rem 13.3rem 0rem 0rem;
@@ -3670,7 +3684,7 @@ footer{
   padding: 0.5rem 9.8rem 0rem 2rem;
 }
 .skill3-text{
-  padding: 0.5rem 2.5rem 0rem 2rem;
+  padding: 0.5rem 3.1rem 0rem 2rem;
 }
 
 .skill4-text{
