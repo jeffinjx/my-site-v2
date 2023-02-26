@@ -2944,7 +2944,7 @@ footer{
 }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 429px) {
 .about-box-outline {
   height: 485px;
 }
@@ -2963,7 +2963,7 @@ footer{
 }
 }
 
-@media (max-width: 413px) {
+@media (max-width: 416px) {
   .about-box-outline {
     height: 510px;
   }
@@ -2979,7 +2979,7 @@ footer{
   }
 }
 
-@media (max-width: 386px) {
+@media (max-width: 388px) {
   .about-box-outline {
     height: 535px;
   }
@@ -2994,7 +2994,7 @@ footer{
   }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 377px) {
   .about-box-outline {
     height: 555px;
   }
@@ -3009,7 +3009,7 @@ footer{
   }
 }
 
-@media (max-width: 358px) {
+@media (max-width: 362px) {
   
   .menu ul li a {
     font-size: 1.5rem;
@@ -3333,7 +3333,7 @@ footer{
 }
 
 
-@media (max-width: 342px) {
+@media (max-width: 345px) {
 
 .about-section{
   padding-top: 5px;
@@ -3366,7 +3366,7 @@ footer{
 
 }
 
-@media (max-width: 331px) {
+@media (max-width: 334px) {
 
 .skill-font {
   font-size: 0.8rem;
@@ -3510,7 +3510,7 @@ footer{
 
 }
 
-@media (max-width: 324px) {
+@media (max-width: 327px) {
   .about-box-outline {
     height: 670px;
 }
@@ -3530,7 +3530,7 @@ footer{
 }
 }
 
-@media (max-width: 298px) {
+@media (max-width: 302px) {
   .about-box-outline {
     height: 720px;
 }
@@ -3545,7 +3545,7 @@ footer{
 
 }
 
-@media (max-width: 293px) {
+@media (max-width: 296px) {
 
   .skill-font {
     font-size: 0.7rem;
@@ -3620,7 +3620,7 @@ footer{
 
 }
 
-@media (max-width: 291px) {
+@media (max-width: 294px) {
   .about-box-outline {
     height: 770px;
 }
@@ -3635,7 +3635,7 @@ footer{
 
 }
 
-@media (max-width: 290px) {
+@media (max-width: 293px) {
 
 .paragraph-1{
   margin: 0 3rem 0 3rem;
@@ -3664,7 +3664,7 @@ footer{
 
 }
 
-@media (max-width: 280px) {
+@media (max-width: 283px) {
   
   .about-box-outline {
     height: 595px;
@@ -3687,7 +3687,7 @@ footer{
   
   }
 
-@media (max-width: 274px) {
+@media (max-width: 278px) {
 
 .paragraph-1 {
   font-size: 0.8rem;
@@ -3872,7 +3872,7 @@ footer{
     
     }
 
-      @media (max-width: 270px) {
+      @media (max-width: 273px) {
   
       .about-box-outline {
         height: 525px;
@@ -3896,7 +3896,7 @@ footer{
       
       }
 
-      @media (max-width: 261px) {
+      @media (max-width: 264px) {
 
         h1 {
           font-size: 1.5rem;
@@ -3916,7 +3916,7 @@ footer{
         
         }
 
-        @media (max-width: 256px) {
+        @media (max-width: 260px) {
   
           .about-box-outline {
             height: 560px;
